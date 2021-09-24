@@ -3,20 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola Mundo.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header id="encabezado">
+        <h1 class="encabezado-tituloPrincipal">Hola Mundo.</h1>
+
+        <p class="encabezado-parrafoPrincipal">Bienvenidos a todos y todas.</p>
       </header>
     </div>
   );
