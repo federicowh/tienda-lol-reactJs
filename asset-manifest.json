@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tienda-lol-reactJs/static/css/main.7d2ca491.chunk.css",
-    "main.js": "/tienda-lol-reactJs/static/js/main.894b3fcb.chunk.js",
-    "main.js.map": "/tienda-lol-reactJs/static/js/main.894b3fcb.chunk.js.map",
+    "main.css": "/tienda-lol-reactJs/static/css/main.c5cd53a3.chunk.css",
+    "main.js": "/tienda-lol-reactJs/static/js/main.e5e07a0c.chunk.js",
+    "main.js.map": "/tienda-lol-reactJs/static/js/main.e5e07a0c.chunk.js.map",
     "runtime-main.js": "/tienda-lol-reactJs/static/js/runtime-main.d9c147cb.js",
     "runtime-main.js.map": "/tienda-lol-reactJs/static/js/runtime-main.d9c147cb.js.map",
     "static/js/2.1d974c9b.chunk.js": "/tienda-lol-reactJs/static/js/2.1d974c9b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.7eacb252.chunk.js": "/tienda-lol-reactJs/static/js/3.7eacb252.chunk.js",
     "static/js/3.7eacb252.chunk.js.map": "/tienda-lol-reactJs/static/js/3.7eacb252.chunk.js.map",
     "index.html": "/tienda-lol-reactJs/index.html",
-    "static/css/main.7d2ca491.chunk.css.map": "/tienda-lol-reactJs/static/css/main.7d2ca491.chunk.css.map",
+    "static/css/main.c5cd53a3.chunk.css.map": "/tienda-lol-reactJs/static/css/main.c5cd53a3.chunk.css.map",
     "static/js/2.1d974c9b.chunk.js.LICENSE.txt": "/tienda-lol-reactJs/static/js/2.1d974c9b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d9c147cb.js",
     "static/js/2.1d974c9b.chunk.js",
-    "static/css/main.7d2ca491.chunk.css",
-    "static/js/main.894b3fcb.chunk.js"
+    "static/css/main.c5cd53a3.chunk.css",
+    "static/js/main.e5e07a0c.chunk.js"
   ]
 }
