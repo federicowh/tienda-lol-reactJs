@@ -1,4 +1,5 @@
 import React from 'react';
+import { CartWidget } from './CartWidget';
 import ItemListContainer from './ItemListContainer';
 
 export const Navbar = ( props ) => {
@@ -13,9 +14,9 @@ export const Navbar = ( props ) => {
             <p className="bienvenida-parrafoPrincipal">{subTitle}</p>
         </div>
 
-        <ItemListContainer />
+        <CartWidget />
 
-        
+        <ItemListContainer />
         </>
 
     )
