@@ -1,4 +1,4 @@
-import './App.css';
+import './global.css';
 import 'boxicons';
 import { Navbar } from './components/Navbar/Navbar';
 import { HomeView } from './components/HomeView/HomeView';
