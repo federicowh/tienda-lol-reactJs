@@ -1,6 +1,9 @@
 import React from 'react';
 
-export const Encabezado = () => {
+export const Encabezado = ( props ) => {
+
+    console.log(props);
+
     return (
         <div className="encabezado">
             <h1 className="encabezado-tituloPrincipal">¡Hola! Bienvenido a la Tienda. <box-icon name='happy'></box-icon></h1>
