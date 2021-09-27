@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Encabezado = ( props ) => {
+export const Navbar = ( props ) => {
 
     console.log(props);
 

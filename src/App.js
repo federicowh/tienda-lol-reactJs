@@ -1,15 +1,17 @@
 import './App.css';
 import 'boxicons';
-import {Encabezado} from './components/1-encabezado/encabezado';
-import {Contenido} from './components/2-contenido/contenido';
-import {Pie} from './components/3-pie/pie';
+import {Navbar} from './components/1-Navbar/Navbar';
+import {HomeView} from './components/2-HomeView/HomeView';
+import {Footer} from './components/3-Footer/Footer';
 
 function App() {
   return (
     <>
-      <Encabezado/>
-      <Contenido/>
-      <Pie/>
+      <Navbar />
+
+      <HomeView />
+
+      <Footer />
     </>
   );
 }
