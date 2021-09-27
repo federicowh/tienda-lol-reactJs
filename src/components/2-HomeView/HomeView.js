@@ -1,9 +1,11 @@
 import React from 'react';
 
 export const HomeView = () => {
+
     return (
-        <div className="contenido">
-            <p className="contenido-parrafoPrincipal">Aquí van los productos</p>
-        </div>
+        <>
+            <p className="homeview-parrafoPrincipal">Aquí van los productos</p>
+        </>
     )
+
 }
