@@ -1,23 +1,21 @@
 import React from 'react';
+import ItemListContainer from './ItemListContainer';
 
 export const Navbar = ( props ) => {
 
-    console.log(props);
+    const {title, subTitle} = props;
 
     return (
 
         <>
         <div className="bienvenida">
-            <h1 className="bienvenida-tituloPrincipal">¡Hola! Bienvenido a la Tienda</h1>
-            <p className="bienvenida-parrafoPrincipal">Aquí podrás encontrar productos del videojuego League of Legends</p>
+            <h1 className="bienvenida-tituloPrincipal">{title}</h1>
+            <p className="bienvenida-parrafoPrincipal">{subTitle}</p>
         </div>
 
-        <nav className="navbar">
-            <p className="navbar-element">Figuras</p>
-            <p className="navbar-element">Indumentaria</p>
-            <p className="navbar-element">Accesorios</p>
-            <p className="navbar-element">Otros</p>
-        </nav>
+        <ItemListContainer />
+
+        
         </>
 
     )

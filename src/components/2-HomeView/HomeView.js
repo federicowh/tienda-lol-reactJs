@@ -1,10 +1,12 @@
 import React from 'react';
 
-export const HomeView = () => {
+export const HomeView = ( props ) => {
+
+    const {homeViewTitle} = props;
 
     return (
         <>
-            <p className="homeview-parrafoPrincipal">Aquí van los productos</p>
+            <p className="homeview-parrafoPrincipal">{homeViewTitle}</p>
         </>
     )
 
