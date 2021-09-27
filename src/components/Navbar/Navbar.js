@@ -1,3 +1,4 @@
+import './navbar.css';
 import React from 'react';
 import { CartWidget } from './CartWidget';
 import ItemListContainer from './ItemListContainer';

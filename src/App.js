@@ -1,8 +1,8 @@
 import './App.css';
 import 'boxicons';
-import { Navbar } from './components/1-Navbar/Navbar';
-import { HomeView } from './components/2-HomeView/HomeView';
-import { Footer } from './components/3-Footer/Footer';
+import { Navbar } from './components/Navbar/Navbar';
+import { HomeView } from './components/HomeView/HomeView';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   const title = '¡Hola! Bienvenido a la Tienda';

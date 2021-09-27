@@ -1,3 +1,4 @@
+import './homeView.css';
 import React from 'react';
 import { TimeIs } from './TimeIs';
 
