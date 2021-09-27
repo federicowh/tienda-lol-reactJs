@@ -68,6 +68,19 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/*La hora es*/
+.hora{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /*Contenido de la Página*/
 .homeview-parrafoPrincipal {
   display: flex;

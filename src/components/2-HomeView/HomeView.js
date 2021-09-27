@@ -1,4 +1,5 @@
 import React from 'react';
+import { TimeIs } from './TimeIs';
 
 export const HomeView = ( props ) => {
 
@@ -6,6 +7,8 @@ export const HomeView = ( props ) => {
 
     return (
         <>
+            <TimeIs />
+
             <p className="homeview-parrafoPrincipal">{homeViewTitle}</p>
         </>
     )
