@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemListContainer = () => {
+export const Menu = () => {
     const noHagoNada = () => {
         alert('Aún no cumplo ninguna función. Lo siento :(')
     };
@@ -12,9 +12,7 @@ const ItemListContainer = () => {
                 <p className="navbar-element" onClick={noHagoNada}>Indumentaria</p>
                 <p className="navbar-element" onClick={noHagoNada}>Accesorios</p>
                 <p className="navbar-element" onClick={noHagoNada}>Otros</p>
-        </nav>
+            </nav>
         </>
     )
 }
-
-export default ItemListContainer

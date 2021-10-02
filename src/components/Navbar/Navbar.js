@@ -1,7 +1,7 @@
 import './navbar.css';
 import React from 'react';
 import { CartWidget } from './CartWidget';
-import ItemListContainer from './ItemListContainer';
+import { Menu } from './Menu';
 
 export const Navbar = ( props ) => {
 
@@ -17,8 +17,7 @@ export const Navbar = ( props ) => {
 
         <CartWidget />
 
-        <ItemListContainer />
+        <Menu />
         </>
-
     )
 }

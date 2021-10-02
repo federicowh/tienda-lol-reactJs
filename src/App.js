@@ -5,7 +5,7 @@ import { HomeView } from './components/HomeView/HomeView';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
-  const title = '¡Hola! Bienvenido a la Tienda';
+  const title = 'Bienvenido a la Tienda';
   const subTitle = 'Aquí podrás encontrar productos del videojuego League of Legends';
 
   const homeViewTitle = 'Aquí van los productos';

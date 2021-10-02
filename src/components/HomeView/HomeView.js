@@ -1,6 +1,7 @@
 import './homeView.css';
 import React from 'react';
 import { TimeIs } from './TimeIs';
+import { ItemListContainer } from './ItemListContainer';
 
 export const HomeView = ( props ) => {
 
@@ -10,7 +11,7 @@ export const HomeView = ( props ) => {
         <>
             <TimeIs />
 
-            <p className="homeview-parrafoPrincipal">{homeViewTitle}</p>
+            <ItemListContainer />
         </>
     )
 
