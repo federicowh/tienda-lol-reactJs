@@ -1,7 +1,8 @@
 import './homeView.css';
 import React from 'react';
-import { TimeIs } from './TimeIs';
+import { Clock } from './Clock';
 import { ItemListContainer } from './ItemListContainer';
+
 
 export const HomeView = ( props ) => {
 
@@ -9,7 +10,7 @@ export const HomeView = ( props ) => {
 
     return (
         <>
-            <TimeIs />
+            <Clock />
 
             <ItemListContainer />
         </>
