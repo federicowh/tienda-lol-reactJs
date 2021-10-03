@@ -24,17 +24,20 @@ export const ItemListContainer = () => {
 
     return (
         <>
-            {loading ? <h2>Cargando...</h2> : <h1>Productos:</h1>}
+            {loading ? <h1>Cargando...</h1> : 
 
+            <div className="itemListContainer">
             { items.map((item) => (
-                <div key={item.id}>
+                <div className="itemList" key={item.id}>
                     <p>ID: {item.id}</p> 
                     <h2>{item.name}</h2> 
                     <p>{item.price}</p>
-                    <hr/>
                 </div>
                 ) 
-            ) }
+            ) } 
+            </div>
+            }
+
         </>
     )
 }
