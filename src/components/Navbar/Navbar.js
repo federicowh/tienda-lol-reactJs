@@ -1,7 +1,7 @@
 import './navbar.css';
 import React from 'react';
-import { CartWidget } from './CartWidget';
-import { Menu } from './Menu';
+import { CartWidget } from '../Navbar/Cart/CartWidget';
+import { Menu } from '../Navbar/Menu/Menu';
 
 export const Navbar = ( props ) => {
 
