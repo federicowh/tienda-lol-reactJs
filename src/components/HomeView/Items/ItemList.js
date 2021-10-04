@@ -9,9 +9,14 @@ export const ItemList = ({ items = [] }) => {
             <div className="itemListContainer">
                 { items.map((item) => (
                     <div className="itemList" key={item.id}>
-                        <p>ID: {item.id}</p> 
-                        <h2>{item.name}</h2> 
-                        <p>{item.price}</p>
+                        <h2 className="productTitle">{item.name}</h2>
+                        <img className="productImage" src={item.img} /> 
+                        <p className="productPrice">$ {item.price}</p>
+
+                        <div className="itemBuy">
+                            <span className="buyNow">Comprar ahora</span>
+                            <span className="addToCart">Agregar al carrito</span>
+                        </div>
                     </div>
                     ) 
                 )}

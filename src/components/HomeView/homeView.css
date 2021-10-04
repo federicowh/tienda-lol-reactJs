@@ -6,7 +6,7 @@
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -36,7 +36,7 @@
 
 .itemTitle{
     text-align: center;
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
     font-style: italic;
 }
 
@@ -51,8 +51,59 @@
 .itemList{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
-    padding: 20px;
+    margin: 20px 0px 20px 0px;
 
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.productId{
+    font-weight: bold;
+}
+
+.productTitle{
+    padding: 10px;
+    font-style: italic;
+}
+
+.productImage{
+    width: 350px;
+    height: 440px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.productImage:hover{
+    transform: scale(1.08,1.08);
+    transition: all 1s;
+}
+
+.productPrice{
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+}
+
+.itemBuy{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 20px;
+}
+
+.itemBuy span{
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.5s;
+}
+.itemBuy span:hover{
+    color: #EBA272;
+    background-color: black;
+    box-shadow: inset 0 0 0 5px #EBA272;
 }
