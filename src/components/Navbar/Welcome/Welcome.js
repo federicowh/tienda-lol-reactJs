@@ -7,9 +7,9 @@ export const Welcome = ( props ) => {
 
     return (
         <>
-            <div className="welcome">
-                <h1 className="welcomeTitle">{title}</h1>
-                <p className="welcomeSubTitle">{subTitle}</p>
+            <div className="welcome"> 
+                <h1 className="welcomeTitle"> {title} </h1>
+                <p className="welcomeSubTitle"> {subTitle} </p>
             </div>
         </>
     )
