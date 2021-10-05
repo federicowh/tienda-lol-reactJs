@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from "react";
+import '../../HomeView/Items/items.css';
 import { pedirProductos } from '../../../functions/pedirProductos';
 import { Loader } from '../../../helpers/Loader';
 import { ItemList } from './ItemList';

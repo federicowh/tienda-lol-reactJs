@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import '../../HomeView/Clock/clock.css';
 
 export const Clock = () => {
 

@@ -1,0 +1,22 @@
+/*Clock*/
+.clock{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.clock h3{
+    font-size: 21px;
+    font-style: italic;
+    transition: all 0.8s;
+}
+
+.clock h3:hover{
+    color: #EBA272;
+}
