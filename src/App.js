@@ -6,17 +6,16 @@ import { Footer } from './components/Footer/Footer';
 
 function App() {
 
-  const footerTitle = 'Aquí va el Pie de Página';
-
   return (
     <>
       <Navbar />
 
       <HomeView />
 
-      <Footer footerTitle={footerTitle}/>
+      <Footer />
     </>
   );
+
 }
 
 export default App;

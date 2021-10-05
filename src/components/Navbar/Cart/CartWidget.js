@@ -5,12 +5,13 @@ export const CartWidget = () => {
 
     return (
         <div className="cartWidget">
-            <box-icon
+            <i><box-icon
                 type='solid' 
                 name='cart'
                 size='md'
                 animation='tada-hover'
-            ></box-icon>
+                style={{cursor: "pointer",}}
+            ></box-icon></i>
         </div>
     )
 }

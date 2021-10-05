@@ -1,4 +1,3 @@
-import './navbar.css';
 import React from 'react';
 import { Welcome } from '../Navbar/Welcome/Welcome';
 import { CartWidget } from '../Navbar/Cart/CartWidget';

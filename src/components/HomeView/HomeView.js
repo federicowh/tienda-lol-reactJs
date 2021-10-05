@@ -1,4 +1,3 @@
-import './homeView.css';
 import React from 'react';
 import { Clock } from './Clock/Clock';
 import { ItemListContainer } from './Items/ItemListContainer';
