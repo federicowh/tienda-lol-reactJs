@@ -5,18 +5,14 @@ import { HomeView } from './components/HomeView/HomeView';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
-  const title = 'Bienvenido a la Tienda';
-  const subTitle = 'Aquí podrás encontrar productos del videojuego League of Legends';
-
-  const homeViewTitle = 'Aquí van los productos';
 
   const footerTitle = 'Aquí va el Pie de Página';
 
   return (
     <>
-      <Navbar title={title} subTitle={subTitle} />
+      <Navbar />
 
-      <HomeView homeViewTitle={homeViewTitle} />
+      <HomeView />
 
       <Footer footerTitle={footerTitle}/>
     </>

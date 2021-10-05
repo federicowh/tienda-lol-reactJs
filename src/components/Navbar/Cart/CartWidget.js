@@ -1,8 +1,10 @@
+import '../../Navbar/Cart/cartWidget.css';
 import React from 'react'
 
 export const CartWidget = () => {
+
     return (
-        <div className="carrito">
+        <div className="cartWidget">
             <box-icon
                 type='solid' 
                 name='cart'

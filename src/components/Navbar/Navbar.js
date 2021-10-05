@@ -1,19 +1,18 @@
 import './navbar.css';
 import React from 'react';
+import { Welcome } from '../Navbar/Welcome/Welcome';
 import { CartWidget } from '../Navbar/Cart/CartWidget';
 import { Menu } from '../Navbar/Menu/Menu';
 
-export const Navbar = ( props ) => {
+export const Navbar = () => {
 
-    const {title, subTitle} = props;
+    const title = 'Bienvenido a la Tienda';
+    const subTitle = 'Aquí podrás encontrar productos del videojuego League of Legends';
 
     return (
 
         <>
-        <div className="bienvenida">
-            <h1 className="bienvenida-tituloPrincipal">{title}</h1>
-            <p className="bienvenida-parrafoPrincipal">{subTitle}</p>
-        </div>
+        <Welcome title={title} subTitle={subTitle} />
 
         <CartWidget />
 

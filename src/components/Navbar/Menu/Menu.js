@@ -1,6 +1,8 @@
+import '../../Navbar/Menu/menu.css';
 import React from 'react'
 
 export const Menu = () => {
+
     const noHagoNada = () => {
         alert('Aún no cumplo ninguna función. Lo siento :(')
     };
