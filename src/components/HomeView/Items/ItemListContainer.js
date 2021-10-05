@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 import '../../HomeView/Items/items.css';
-import { pedirProductos } from '../../../functions/pedirProductos';
+import { askForProducts } from '../../../functions/askForProducts';
 import { Loader } from '../../../helpers/Loader';
 import { ItemList } from './ItemList';
 
@@ -13,7 +13,7 @@ export const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirProductos()
+        askForProducts()
             .then((res) => {
                 setItems(res)
             })
