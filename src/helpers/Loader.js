@@ -4,25 +4,27 @@ import '../helpers/loader.css';
 export const Loader = () => {
     return (
         <>
-            <div class="loader">
-                <div class="loader-inner">
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
+
+            <div className="loader">
+                <div className="loader-inner">
+                    <div className="loader-line-wrap">
+                        <div className="loader-line"></div>
                     </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
+                    <div className="loader-line-wrap">
+                        <div className="loader-line"></div>
                     </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
+                    <div className="loader-line-wrap">
+                        <div className="loader-line"></div>
                     </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
+                    <div className="loader-line-wrap">
+                        <div className="loader-line"></div>
                     </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
+                    <div className="loader-line-wrap">
+                        <div className="loader-line"></div>
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
