@@ -11,7 +11,7 @@ export const FooterSponsors = () => {
     };
 
     return (
-        <div class="sponsorsContainer">
+        <div className="sponsorsContainer">
             <img id="intel" src={intel} />
             <img id="twitch" src={riot} />
             <img id="riot" src={twitch} />
