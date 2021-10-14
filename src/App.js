@@ -19,7 +19,7 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/tienda-lol-reactJs">
             <HomeView />
           </Route>
 
