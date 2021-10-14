@@ -8,8 +8,9 @@ export const Menu = () => {
         <>
             <nav className="navbar">
                 <NavLink activeClassName={'activeLink'} exact to="/tienda-lol-reactJs">Inicio</NavLink>
-                <NavLink activeClassName={'activeLink'} exact to="/productos/figuras1">Figuras 1</NavLink>
-                <NavLink activeClassName={'activeLink'} exact to="/productos/figuras2">Figuras 2</NavLink>
+                <NavLink activeClassName={'activeLink'} exact to="/productos/Figuras">Figuras</NavLink>
+                <NavLink activeClassName={'activeLink'} exact to="/productos/Remeras">Remeras</NavLink>
+                <NavLink activeClassName={'activeLink'} exact to="/productos/Camperas">Camperas</NavLink>
                 <NavLink activeClassName={'activeLink'} exact to="/contacto">Contacto</NavLink>
             </nav>
         </>

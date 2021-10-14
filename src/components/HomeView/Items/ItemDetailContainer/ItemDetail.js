@@ -1,25 +1,40 @@
 import React from 'react'
 import { useHistory } from 'react-router'
+import '../../Items/ItemDetailContainer/itemDetail.css'
 
-export const ItemDetail = ({id, name, price, img, description, category}) => {
+export const ItemDetail = ({id, name, price, img, img1, img2, img3, description, category}) => {
 
     const {goBack, push} = useHistory()
 
     return (
-        <div>
-            <h2>{name}</h2>
-            <img src={img} alt={name}/>
-            <p>{description}</p>
-            <p>{category}</p>
-            <h4>Precio: ${price}</h4>
+        <div className="itemContainer">
+            <div className="itemShow">
+                <img id="newImg" className="itemImg" src={img} alt={name}/>
 
-            <button onClick={ () => goBack() }>
-                Volver atras
-            </button>
+                <div className="itemShowNav">
+                    <img onClick={ () => imagen0() } className="subItemImg" src={img} alt={name}/>
+                    <img onClick={ () => imagen1() } className="subItemImg" src={img1} alt={name}/>
+                    <img onClick={ () => imagen2() } className="subItemImg" src={img2} alt={name}/>
+                    <img onClick={ () => imagen3() } className="subItemImg" src={img3} alt={name}/>
+                </div>
+            </div>
 
-            <button onClick={ () => push("/tienda-lol-reactJs") }>
-                Volver al Inicio
-            </button>
+            <div className="itemInfo">
+                <h2 className="itemName">{name}</h2>
+                <p>Descripción: {description}</p>
+                <p>Categoría: {category}</p>
+                <h4>Precio: ${price}</h4>
+
+                <div className="itemBtn">
+                    <span onClick={ () => goBack() }>
+                        Volver atras
+                    </span>
+
+                    <span onClick={ () => push("/tienda-lol-reactJs") }>
+                        Volver al Inicio
+                    </span>
+                </div>
+            </div>
         </div>
     )
 }

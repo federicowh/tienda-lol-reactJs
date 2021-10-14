@@ -15,6 +15,7 @@
     text-align: center;
     padding: 30px 30px 0px 30px;
     font-style: italic;
+    font-size: 40px;
 }
 
 /*Products Cards*/
@@ -43,7 +44,15 @@
 }
 
 .itemTitle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 350px;
+    height: 78px;
     padding: 10px;
+    font-size: 20px;
     font-style: italic;
 }
 
