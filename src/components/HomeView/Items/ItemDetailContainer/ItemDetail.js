@@ -17,7 +17,7 @@ export const ItemDetail = ({id, name, price, img, description, category}) => {
                 Volver atras
             </button>
 
-            <button onClick={ () => push("/") }>
+            <button onClick={ () => push("/tienda-lol-reactJs") }>
                 Volver al Inicio
             </button>
         </div>
