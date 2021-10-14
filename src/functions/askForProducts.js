@@ -5,7 +5,7 @@ export const askForProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(stock) 
-        }, 4100)
+        }, 2000)
     })
 
 }
