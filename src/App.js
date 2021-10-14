@@ -15,7 +15,7 @@ import { Footer } from './components/Footer/Footer';
 function App() {
   return (
     <Router>
-      <div>
+      <>
         <Navbar />
 
         <Switch>
@@ -41,7 +41,7 @@ function App() {
         </Switch>
 
         <Footer />
-      </div>
+      </>
     </Router>
   );
 
