@@ -12,14 +12,21 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.navbar-element{
+.navbar a{
     padding: 20px 40px 20px 40px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 1s;
+    text-decoration: none;
+    color: black;
 }
-.navbar-element:hover{
+
+.activeLink{
+    color: #EBA272;
+}
+
+.navbar a:hover{
     color: #EBA272;
     background-color: black;
     box-shadow: inset 0 0 0 15px #EBA272;

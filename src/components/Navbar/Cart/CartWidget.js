@@ -6,7 +6,7 @@ export const CartWidget = () => {
 
     return (
         <div className="cartWidget">
-            <i onClick={nothingToDo}><box-icon
+            <i><box-icon
                 type='solid' 
                 name='cart'
                 size='md'

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Welcome } from '../Navbar/Welcome/Welcome';
 import { CartWidget } from '../Navbar/Cart/CartWidget';
 import { Menu } from '../Navbar/Menu/Menu';
@@ -13,7 +14,7 @@ export const Navbar = () => {
         <>
         <Welcome title={title} subTitle={subTitle} />
 
-        <CartWidget />
+        <Link to="/cart"> <CartWidget /> </Link>
 
         <Menu />
         </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 export const ItemList = ({ items = [] }) => {
     return (
@@ -14,7 +15,7 @@ export const ItemList = ({ items = [] }) => {
                         <p className="itemPrice">$ {item.price}</p>
 
                         <div className="itemBuy">
-                            <span className="buyNow">Comprar ahora</span>
+                            <Link to={`/detail/${item.id}`}><span className="buyNow">Comprar ahora</span></Link>
                             <span className="addToCart">Agregar al carrito</span>
                         </div>
                     </div>

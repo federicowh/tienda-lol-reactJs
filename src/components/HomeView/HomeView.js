@@ -1,6 +1,7 @@
 import React from 'react';
 import { Clock } from './Clock/Clock';
 import { ItemListContainer } from './Items/ItemListContainer';
+// import { Poke } from './Poke/Poke';
 
 export const HomeView = () => {
 
@@ -9,6 +10,8 @@ export const HomeView = () => {
             <Clock />
 
             <ItemListContainer />
+
+            {/* <Poke /> */}
         </>
     )
 
