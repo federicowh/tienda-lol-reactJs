@@ -12,10 +12,10 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
                 <img id="newImg" className="itemImg" src={img} alt={name}/>
 
                 <div className="itemShowNav">
-                    <img onClick={ () => imagen0() } className="subItemImg" src={img} alt={name}/>
-                    <img onClick={ () => imagen1() } className="subItemImg" src={img1} alt={name}/>
-                    <img onClick={ () => imagen2() } className="subItemImg" src={img2} alt={name}/>
-                    <img onClick={ () => imagen3() } className="subItemImg" src={img3} alt={name}/>
+                    <img className="subItemImg" src={img} alt={name}/>
+                    <img className="subItemImg" src={img1} alt={name}/>
+                    <img className="subItemImg" src={img2} alt={name}/>
+                    <img className="subItemImg" src={img3} alt={name}/>
                 </div>
             </div>
 

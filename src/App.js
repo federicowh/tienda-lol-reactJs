@@ -10,6 +10,8 @@ import 'boxicons';
 import { Navbar } from './components/Navbar/Navbar';
 import { HomeView } from './components/HomeView/HomeView';
 import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailContainer/ItemDetailContainer';
+import { Shopping } from './components/HomeView/Shopping/Shopping'
+import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
 
 function App() {
@@ -32,11 +34,11 @@ function App() {
           </Route>
 
           <Route exact path="/contacto">
-            <h1>Contacto</h1>
+            <Contact />
           </Route>
 
           <Route exact path="/cart">
-            <h1>Carrito</h1>
+            <Shopping />
           </Route>
         </Switch>
 

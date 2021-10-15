@@ -1,0 +1,41 @@
+.shoppingCart{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    height: 800px;
+    margin: auto;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shoppingCart h4{
+    font-size: 40px;
+}
+
+.shoppingCart p{
+    margin: 15px;
+}
+
+.shoppingCart span{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.shoppingCart span{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.shoppingCart span:hover{
+    color: #EBA272;
+    background-color: black;
+    box-shadow: inset 0 0 0 10px #EBA272;
+}

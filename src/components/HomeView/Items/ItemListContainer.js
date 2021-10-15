@@ -28,7 +28,6 @@ export const ItemListContainer = () => {
             .catch((err) => console.log(err))
             .finally(() =>{
                 setLoading(false)
-                console.log('Fin del Llamado')
             })
     }, [categoryId])
 
