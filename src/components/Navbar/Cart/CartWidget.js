@@ -1,6 +1,5 @@
 import '../../Navbar/Cart/cartWidget.css';
 import React from 'react'
-import { nothingToDo } from '../../../functions/nothingToDo'
 
 export const CartWidget = () => {
 
