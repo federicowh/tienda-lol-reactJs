@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+---- PROYECTO CODERHOUSE -----
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- CURSO: React Js / CAMADA: 19750
 
-## Available Scripts
+- ALUMNO: Federico Weimann
 
-In the project directory, you can run:
+- PROYECTO: Es un e-commerce relacionado al videojuego "League of Legends" 
 
-### `npm start`
+Descripción:
+- El proyecto tiene como finalidad mostrar la mayor cantidad de productos disponibles y relacionados con el videojuego "League of Legends", como pueden ser: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Figuras / Estatuillas / Pines / Peluches
+2) Indumentaria (Ejemplos: Remeras/Gorros/Pantalones/Camperas... etc)
+3) Posters / Comics / Ilustraciones 
+4) Accesorios y otros...
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Todo este contenido va a ser extraído directamente desde el store oficial de ellos y voy a ir completando el catálogo a medida que pasen las entregas llegando a la entrega final con la mayor cantidad de productos para ofrecer. (Fuente: https://merch.riotgames.com/es-es/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Cuenta con todas las dependencias necesarias hasta el momento.
+- NO SE USA BOOTSTRAP en este Proyecto
+- Boxicons fue agregado al package.json para utilizarlos como componentes ya que ellos te dan esa posibilidad.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Un poco sobre mi:
+Mi nombre es Federico, tengo 27 años, vivo en Buenos Aires y soy de zona sur mas precisamente de la localidad de Avellaneda. Arranqué en la cuarentena pasada a instruirme en lo que es programación (haciendo varios cursos en linea algunos gratuitos otros pagos) y me encantó, nunca fuí del palo ya que desde que terminé el colegio trabajé en estudios jurídicos con Abogados pero con la cuarentena y el tiempo libre que me dió la misma me di el gusto y la oportunidad de probar este nuevo mundo y quedé fascinado. 
