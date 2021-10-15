@@ -1,4 +1,4 @@
-![](demo/demoReactJs.gif)
+![](demoReactJs.gif)
 
 ---- PROYECTO CODERHOUSE -----
 
