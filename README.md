@@ -18,7 +18,8 @@ Todo este contenido va a ser extraído directamente desde el store oficial de el
 
 
 - Cuenta con todas las dependencias necesarias hasta el momento.
-- NO SE USA BOOTSTRAP en este Proyecto
+- NO SE USA BOOTSTRAP en este Proyecto.
+- CSS puro aplicado. (NO SCSS pero posiblemente piense en agregarlo si veo que suma ya que puedo hacerlo)
 - Boxicons fue agregado al package.json para utilizarlos como componentes ya que ellos te dan esa posibilidad.
 
 Un poco sobre mi:
