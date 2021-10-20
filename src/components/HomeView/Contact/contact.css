@@ -2,7 +2,7 @@
     position: relative;
     width: 90%;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +15,7 @@
     width: 100%;
     max-width: 900px;
     background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1000;
     overflow: hidden;
     display: grid;
@@ -69,7 +68,6 @@ form {
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
-    border-radius: 25px;
     transition: 0.3s;
 }
 
@@ -80,7 +78,6 @@ form {
 textarea.input {
     padding: 0.8rem 1.2rem;
     min-height: 150px;
-    border-radius: 22px;
     resize: none;
     overflow-y: auto;
 }
@@ -106,6 +103,7 @@ textarea.input {
 
 .contact-info {
     padding: 2.3rem 2.2rem;
+    text-align: justify;
 }
 
 .contact-info .title {

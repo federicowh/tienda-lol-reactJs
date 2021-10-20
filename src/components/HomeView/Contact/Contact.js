@@ -10,29 +10,30 @@ export const Contact = () => {
                         <h3 class="title">Contacta con Nosotros.</h3>
 
                         <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                            dolorum adipisci recusandae praesentium dicta!
+                        Riot Games, Inc. es una desarrolladora y editora de videojuegos y organizador de torneos de deportes electrónicos estadounidense. 
+                        La empresa se fundó en septiembre de 2006 para desarrollar League of Legends, un videojuego multijugador de arena de batalla en línea. 
+                        Riot Games opera 14 ligas de deportes electrónicos a nivel internacional y el Campeonato del Mundo de League of Legends. Hasta mayo de 2018, Riot Games tenía 24 oficinas en todo el mundo, en las que empleaba alrededor de 2500 personas.
                         </p>
 
                         <div class="info">
                             <div class="information">
                                 <box-icon name='map' type='solid' color="white" ></box-icon>
-                                <p>92 Cherry Drive Uniondale, NY 11553</p>
+                                <p>Los Ángeles, California, EE.UU</p>
                             </div>
 
                             <div class="information">
                                 <box-icon name='envelope-open' color="white" ></box-icon>
-                                <p>lorem@ipsum.com</p>
+                                <p>support@riotgames.com</p>
                             </div>
 
                             <div class="information">
                                 <box-icon name='phone' color="white" ></box-icon>
-                                <p>123-456-789</p>
+                                <p>424-231-1111</p>
                             </div>
                         </div>
 
                         <div class="social-media">
-                            <p>Connect with us :</p>
+                            <p>Conecta con nosotros :</p>
 
                             <div class="social-icons">
                                 <a href="#">
