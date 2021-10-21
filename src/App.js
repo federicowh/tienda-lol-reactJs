@@ -2,9 +2,7 @@ import React from 'react';
 import { 
   BrowserRouter as Router, 
   Switch, 
-  Route,
-  Link,
-  NavLink, } from "react-router-dom";
+  Route } from "react-router-dom";
 import './global.css';
 import 'boxicons';
 import { Navbar } from './components/Navbar/Navbar';
@@ -13,6 +11,8 @@ import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailConta
 import { Shopping } from './components/HomeView/Shopping/Shopping'
 import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
+import { ClickTracker } from './helpers/ClickTracker/ClickTracker';
+
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
 
         <Switch>
           <Route exact path="/tienda-lol-reactJs">
+            <ClickTracker />
             <HomeView />
           </Route>
 

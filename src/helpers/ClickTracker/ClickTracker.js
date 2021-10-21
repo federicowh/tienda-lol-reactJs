@@ -1,21 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import '../../helpers/ClickTracker/clickTracker.css';
 
 export const ClickTracker = () => {
-    const [counter, setCounter] = useState(0)
 
-    const aumentarContador = () => {
-        setCounter( counter + 1 )
+    const [coord, setCoord] = useState({x: 0, y: 0})
+
+    const handleClick = (e) => {
+        console.log(e)
+
+        setCoord({
+            x: e.x,
+            y: e.y
+        })
     }
 
+    useEffect( () => {
+        window.addEventListener('click', handleClick)
+
+        return () => {
+            window.removeEventListener('click', handleClick)
+        }
+    }, [])
+
     return (
-        <div className="container">
-            <button onClick={aumentarContador}>
-                Aumentar contador
-            </button>
+        <div  
+            className="trackerContainer"
+            onClick={handleClick}
+        >
+            <h3>X: {coord.x}</h3>
 
-            <h3>Cantidad de Clicks: {counter}</h3>
-
-            <h3>FyH: {counter > 0 ? new Date().toLocaleString() : "No hay clicks aún"}</h3>
+            <h3>Y: {coord.y}</h3>
         </div>
     )
 }
