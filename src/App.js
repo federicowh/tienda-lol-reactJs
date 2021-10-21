@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { CartContext } from './context/CartContext';
+import React from 'react';
+import { CartProvider } from './context/CartContext';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -13,25 +13,10 @@ import { Shopping } from './components/HomeView/Shopping/Shopping'
 import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
 
-const init = JSON.parse(localStorage.getItem('carrito')) || []
-
 function App() {
-  
-  const [carrito, setCarrito] = useState(init)
-  
-  console.log(carrito)
-  localStorage.setItem( 'carrito', JSON.stringify(carrito) )
-
-  const addToCart = (item) => {
-    setCarrito( [ ...carrito, item ] )
-  }
-
-  const removeItem = (itemId) => {
-
-  }
 
   return (
-    <CartContext.Provider value={ { addToCart } }>
+    <CartProvider>
 
       <Router>
 
@@ -65,7 +50,7 @@ function App() {
 
       </Router>
 
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 

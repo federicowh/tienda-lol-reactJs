@@ -1,7 +1,7 @@
 /*Cart Widget*/
 .cartWidget{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
@@ -11,4 +11,11 @@
 
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemQuantity{
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+    font-weight: bold;
 }

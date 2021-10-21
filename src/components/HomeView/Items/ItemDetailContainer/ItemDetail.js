@@ -21,7 +21,7 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
             quantity
         }
 
-        if (cantidad > 0){
+        if (quantity > 0){
             addToCart(newItem)
         }
     }
