@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CartContext } from './context/CartContext';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -12,40 +13,60 @@ import { Shopping } from './components/HomeView/Shopping/Shopping'
 import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
 
+const init = JSON.parse(localStorage.getItem('carrito')) || []
 
 function App() {
+  
+  const [carrito, setCarrito] = useState(init)
+  
+  console.log(carrito)
+  localStorage.setItem( 'carrito', JSON.stringify(carrito) )
+
+  const addToCart = (item) => {
+    setCarrito( [ ...carrito, item ] )
+  }
+
+  const removeItem = (itemId) => {
+
+  }
+
   return (
-    <Router>
-      <>
-        <Navbar />
+    <CartContext.Provider value={ { addToCart } }>
 
-        <Switch>
-          <Route exact path="/tienda-lol-reactJs">
-            <HomeView />
-          </Route>
+      <Router>
 
-          <Route exact path="/productos/:categoryId">
-            <HomeView />
-          </Route>
+        <>
+          <Navbar />
 
-          <Route exact path="/detail/:itemId">
-            <ItemDetailContainer />
-          </Route>
+          <Switch>
+            <Route exact path="/tienda-lol-reactJs">
+              <HomeView />
+            </Route>
 
-          <Route exact path="/contacto">
-            <Contact />
-          </Route>
+            <Route exact path="/productos/:categoryId">
+              <HomeView />
+            </Route>
 
-          <Route exact path="/cart">
-            <Shopping />
-          </Route>
-        </Switch>
+            <Route exact path="/detail/:itemId">
+              <ItemDetailContainer />
+            </Route>
 
-        <Footer />
-      </>
-    </Router>
+            <Route exact path="/contacto">
+              <Contact />
+            </Route>
+
+            <Route exact path="/cart">
+              <Shopping />
+            </Route>
+          </Switch>
+
+          <Footer />
+        </>
+
+      </Router>
+
+    </CartContext.Provider>
   );
-
 }
 
 export default App;

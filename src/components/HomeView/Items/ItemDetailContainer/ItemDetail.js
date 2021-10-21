@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { CartContext } from '../../../../context/CartContext'
 import { useHistory } from 'react-router'
 import { ItemCount } from '../ItemCount/ItemCount'
 import '../../Items/ItemDetailContainer/itemDetail.css'
@@ -7,9 +8,11 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
 
     const {goBack, push} = useHistory()
 
+    const {addToCart} = useContext(CartContext)
+
     const [quantity, setQuantity] = useState(1)
 
-    const addToCart = () => {
+    const handleAdd = () => {
         const newItem = {
             id,
             name,
@@ -18,7 +21,9 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
             quantity
         }
 
-        console.log('Agregado: ', newItem)
+        if (cantidad > 0){
+            addToCart(newItem)
+        }
     }
 
     return (
@@ -47,7 +52,7 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
                         Volver atrás
                     </span>
 
-                    <span onClick={addToCart}>
+                    <span onClick={handleAdd}>
                         Agregar al Carrito
                     </span>
 

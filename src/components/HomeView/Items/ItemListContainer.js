@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { askForProducts } from '../../../functions/askForProducts'
-import { Loader } from '../../../helpers/Loader/Loader'
+import { Loader } from '../../../utilities/Loader/Loader'
 import { ItemList } from './ItemList'
 import '../../HomeView/Items/items.css'
 
