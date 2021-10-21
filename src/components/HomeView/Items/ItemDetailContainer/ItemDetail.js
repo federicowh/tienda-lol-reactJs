@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router'
+import { ItemCount } from '../ItemCount/ItemCount'
 import '../../Items/ItemDetailContainer/itemDetail.css'
 
-export const ItemDetail = ({id, name, price, img, img1, img2, img3, description, category}) => {
+export const ItemDetail = ({id, name, price, img, img1, img2, img3, description, category, stock}) => {
 
     const {goBack, push} = useHistory()
+
+    const [quantity, setQuantity] = useState(1)
+
+    const addToCart = () => {
+        const newItem = {
+            id,
+            name,
+            price,
+            category,
+            quantity
+        }
+
+        console.log('Agregado: ', newItem)
+    }
 
     return (
         <div className="itemContainer">
@@ -25,9 +40,15 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
                 <p>Categoría: {category}</p>
                 <h4>Precio: ${price}</h4>
 
+                <ItemCount quantity={quantity} modifyQuantity={setQuantity} max={stock} />
+
                 <div className="itemBtn">
                     <span onClick={ () => goBack() }>
-                        Volver atras
+                        Volver atrás
+                    </span>
+
+                    <span onClick={addToCart}>
+                        Agregar al Carrito
                     </span>
 
                     <span onClick={ () => push("/tienda-lol-reactJs") }>

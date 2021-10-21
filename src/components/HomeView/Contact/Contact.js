@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Contact/contact.css'
 
 export const Contact = () => {
+
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+
+    const handleInputChange = (e) => {
+
+        setValues({
+            ...values,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        console.log(values)
+    }
+
     return (
         <>
             <div className="container">
@@ -53,30 +74,41 @@ export const Contact = () => {
                     </div>
 
                     <div className="contact-form">
-                        <form action="index.html" autoComplete="off">
+                        <form onSubmit={handleSubmit}>
                             <h3 className="title">Dejanos un mensaje</h3>
 
                             <div className="input-container">
-                                <input type="text" name="name" className="input" placeholder="Nombre" />
-                                <label></label>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    className="input" 
+                                    placeholder="Nombre" 
+                                    value={values.name}
+                                    onChange={handleInputChange}
+                                />
                             </div>
 
                             <div className="input-container">
-                                <input type="email" name="email" className="input" placeholder="Email" />
-                                <label></label>
-                            </div>
-
-                            <div className="input-container">
-                                <input type="tel" name="phone" className="input" placeholder="Teléfono" />
-                                <label></label>
+                                <input type="email" 
+                                    name="email" 
+                                    className="input" 
+                                    placeholder="Email"
+                                    value={values.email}
+                                    onChange={handleInputChange} 
+                                />
                             </div>
 
                             <div className="input-container textarea">
-                                <textarea name="message" className="input" placeholder="Tu mensaje..."></textarea>
-                                <label></label>
+                                <textarea 
+                                    name="message"
+                                    className="input" 
+                                    placeholder="Tu mensaje..."
+                                    value={values.message}
+                                    onChange={handleInputChange}
+                                ></textarea>
                             </div>
 
-                            <input type="submit" value="Send" className="btn" />
+                            <input type="submit" value="Enviar" className="btn" />
                         </form>
                     </div>
                 </div>

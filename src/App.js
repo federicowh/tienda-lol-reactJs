@@ -11,7 +11,6 @@ import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailConta
 import { Shopping } from './components/HomeView/Shopping/Shopping'
 import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
-import { ClickTracker } from './helpers/ClickTracker/ClickTracker';
 
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
 
         <Switch>
           <Route exact path="/tienda-lol-reactJs">
-            <ClickTracker />
             <HomeView />
           </Route>
 
