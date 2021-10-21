@@ -1,6 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const ItemList = ({ items = [] }) => {
     return (

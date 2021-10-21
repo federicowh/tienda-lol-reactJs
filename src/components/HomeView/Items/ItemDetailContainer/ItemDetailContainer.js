@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { ItemDetail } from './ItemDetail'
 import { askForProducts } from '../../../../functions/askForProducts'
-import { Loader } from '../../../../helpers/Loader'
+import { Loader } from '../../../../helpers/Loader/Loader'
 
 
 export const ItemDetailContainer = () => {

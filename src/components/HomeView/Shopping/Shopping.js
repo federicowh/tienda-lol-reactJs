@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Shopping/shopping.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Clock } from '../Clock/Clock'
 
 export const Shopping = () => {
