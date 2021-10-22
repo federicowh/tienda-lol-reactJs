@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from '../../../../context/CartContext'
 import { useHistory } from 'react-router'
+import { Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
 import '../../Items/ItemDetailContainer/itemDetail.css'
 
@@ -8,7 +9,7 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
 
     const {goBack, push} = useHistory()
 
-    const {addToCart} = useContext(CartContext)
+    const {addToCart, isInCart} = useContext(CartContext)
 
     const [quantity, setQuantity] = useState(1)
 
@@ -45,15 +46,20 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
                 <p>Categoría: {category}</p>
                 <h4>Precio: ${price}</h4>
 
-                <ItemCount quantity={quantity} modifyQuantity={setQuantity} max={stock} />
+                { isInCart(id) 
+                    ? <Link to="/cart">Finalizar compra</Link>
+                    : 
+                        <div className="itemBtn">
+                            <ItemCount quantity={quantity} modifyQuantity={setQuantity} max={stock} />
+                            <span onClick={handleAdd}>
+                                Agregar al Carrito
+                            </span>
+                        </div>
+                }
 
                 <div className="itemBtn">
                     <span onClick={ () => goBack() }>
                         Volver atrás
-                    </span>
-
-                    <span onClick={handleAdd}>
-                        Agregar al Carrito
                     </span>
 
                     <span onClick={ () => push("/tienda-lol-reactJs") }>

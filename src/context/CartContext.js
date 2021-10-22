@@ -26,6 +26,14 @@ export const CartProvider = ( {children} ) => {
         return cart.reduce( ( acc, prod ) => acc + prod.quantity, 0 )
     }
 
+    const cartFinalPrice = () => {
+        return cart.reduce( (acc, prod) => acc + prod.quantity * prod.price, 0)
+    }
+
+    const isInCart = (itemId) => {
+        return cart.some( (prod) => prod.id === itemId )
+    }
+
     useEffect( () => {
         localStorage.setItem( 'cart', JSON.stringify(cart) )
     }, [cart])
@@ -38,7 +46,9 @@ export const CartProvider = ( {children} ) => {
             addToCart, 
             removeItem, 
             deleteAll, 
-            cartItemQuantity 
+            cartItemQuantity,
+            cartFinalPrice,
+            isInCart
             }}>
 
             {children}

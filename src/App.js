@@ -1,5 +1,6 @@
 import React from 'react';
 import { CartProvider } from './context/CartContext';
+import { UIProvider } from './context/UIContext';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -16,41 +17,38 @@ import { Footer } from './components/Footer/Footer';
 function App() {
 
   return (
-    <CartProvider>
+    <UIProvider>
+      <CartProvider>
+        <Router>
+          <>
+            <Navbar />
+            <Switch>
+              <Route exact path="/tienda-lol-reactJs">
+                <HomeView />
+              </Route>
 
-      <Router>
+              <Route exact path="/productos/:categoryId">
+                <HomeView />
+              </Route>
 
-        <>
-          <Navbar />
+              <Route exact path="/detail/:itemId">
+                <ItemDetailContainer />
+              </Route>
 
-          <Switch>
-            <Route exact path="/tienda-lol-reactJs">
-              <HomeView />
-            </Route>
+              <Route exact path="/contacto">
+                <Contact />
+              </Route>
 
-            <Route exact path="/productos/:categoryId">
-              <HomeView />
-            </Route>
+              <Route exact path="/cart">
+                <Shopping />
+              </Route>
+            </Switch>
 
-            <Route exact path="/detail/:itemId">
-              <ItemDetailContainer />
-            </Route>
-
-            <Route exact path="/contacto">
-              <Contact />
-            </Route>
-
-            <Route exact path="/cart">
-              <Shopping />
-            </Route>
-          </Switch>
-
-          <Footer />
-        </>
-
-      </Router>
-
-    </CartProvider>
+            <Footer />
+          </>
+        </Router>
+      </CartProvider>
+    </UIProvider>
   );
 }
 
