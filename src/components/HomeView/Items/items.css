@@ -60,7 +60,6 @@
     width: 350px;
     height: 440px;
     transition: all 1s;
-    cursor: pointer;
 }
 .itemImage:hover{
     transform: scale(1.08,1.08);
@@ -69,7 +68,7 @@
 
 .itemPrice{
     color: olivedrab;
-    font-size: 21px;
+    font-size: 25px;
     font-weight: bold;
     padding: 0px 0px 10px 0px;
 }

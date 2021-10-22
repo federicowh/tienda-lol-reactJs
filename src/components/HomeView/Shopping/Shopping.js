@@ -15,17 +15,18 @@ export const Shopping = () => {
 
                 {
                     cart.length === 0
-                    ?   <> 
-                        <h3>No tienes productos en tu carrito.</h3>
-                        <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}> <span>Comprar Productos</span> </Link>
-                        </>
+                    ?   <div className="shoppingCartEmpty"> 
+                            <h3>No tienes productos en tu carrito.</h3>
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}> <span>Comprar Productos</span> </Link>
+                        </div>
 
                     :   <>
                         <h2>Resumen de compra</h2>
 
                         {
                             cart.map( (prod) => (
-                                <div>
+                                <div className="itemCartFinal">
+                                    <img src={prod.img} alt={prod.name} />
                                     <h3>{prod.name}</h3>
                                     <p>Cantidad: {prod.quantity} </p>
                                     <p>Precio: ${prod.price * prod.quantity} </p>
@@ -34,10 +35,12 @@ export const Shopping = () => {
                             ))
                         }
 
-                        <h3>Precio Total: ${cartFinalPrice()}</h3>
+                        <h2>Precio Total: ${cartFinalPrice()}</h2>
 
-                        <span onClick={deleteAll}>Vaciar Carrito</span>
-                        <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}><span className="buyNow">Seguir comprando</span></Link>
+                        <div className="shoppingCartButtons">
+                            <span onClick={deleteAll}>Vaciar Carrito</span>
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}><span className="buyNow">Seguir comprando</span></Link>
+                        </div>
                         </>
                 }
             </div>

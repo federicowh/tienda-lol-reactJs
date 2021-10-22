@@ -19,6 +19,7 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
             name,
             price,
             category,
+            img,
             quantity
         }
 
@@ -47,7 +48,7 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
                 <h4>Precio: ${price}</h4>
 
                 { isInCart(id) 
-                    ? <Link to="/cart">Finalizar compra</Link>
+                    ? <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><div className="itemBtn"><span>Finalizar compra</span></div></Link>
                     : 
                         <div className="itemBtn">
                             <ItemCount quantity={quantity} modifyQuantity={setQuantity} max={stock} />
