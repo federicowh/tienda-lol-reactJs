@@ -15,6 +15,14 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.welcomeText{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .welcomeTitle {
     font-size: 40px;
     font-style: italic;

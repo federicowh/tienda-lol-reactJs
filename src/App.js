@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { CartProvider } from './context/CartContext';
 import { UIProvider } from './context/UIContext';
 import { 
@@ -13,16 +13,25 @@ import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailConta
 import { Shopping } from './components/HomeView/Shopping/Shopping'
 import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
+import { UserAuthContext } from './context/UserAuthContext';
+import { UserAuthenticate } from './components/UserAuthenticate/UserAuthenticate';
 
 function App() {
+
+  const { isAuthenticated } = useContext(UserAuthContext)
 
   return (
     <UIProvider>
       <CartProvider>
+
         <Router>
           <>
             <Navbar />
+
             <Switch>
+              { isAuthenticated
+              ?
+              <>
               <Route exact path="/tienda-lol-reactJs">
                 <HomeView />
               </Route>
@@ -42,6 +51,11 @@ function App() {
               <Route exact path="/cart">
                 <Shopping />
               </Route>
+              </>
+
+              :
+              <UserAuthenticate/>
+              }
             </Switch>
 
             <Footer />
