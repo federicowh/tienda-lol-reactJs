@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/tienda-lol-reactJs/static/css/main.af813301.chunk.css",
-    "main.js": "/tienda-lol-reactJs/static/js/main.2f306bde.chunk.js",
-    "main.js.map": "/tienda-lol-reactJs/static/js/main.2f306bde.chunk.js.map",
-    "runtime-main.js": "/tienda-lol-reactJs/static/js/runtime-main.09b5b1e3.js",
-    "runtime-main.js.map": "/tienda-lol-reactJs/static/js/runtime-main.09b5b1e3.js.map",
+    "main.css": "/tienda-lol-reactJs/static/css/main.12fb9e0b.chunk.css",
+    "main.js": "/tienda-lol-reactJs/static/js/main.b6753d31.chunk.js",
+    "main.js.map": "/tienda-lol-reactJs/static/js/main.b6753d31.chunk.js.map",
+    "runtime-main.js": "/tienda-lol-reactJs/static/js/runtime-main.2b049c6d.js",
+    "runtime-main.js.map": "/tienda-lol-reactJs/static/js/runtime-main.2b049c6d.js.map",
     "static/js/2.8a118bea.chunk.js": "/tienda-lol-reactJs/static/js/2.8a118bea.chunk.js",
     "static/js/2.8a118bea.chunk.js.map": "/tienda-lol-reactJs/static/js/2.8a118bea.chunk.js.map",
-    "static/js/3.b5facb19.chunk.js": "/tienda-lol-reactJs/static/js/3.b5facb19.chunk.js",
-    "static/js/3.b5facb19.chunk.js.map": "/tienda-lol-reactJs/static/js/3.b5facb19.chunk.js.map",
+    "static/js/3.bd0e402a.chunk.js": "/tienda-lol-reactJs/static/js/3.bd0e402a.chunk.js",
+    "static/js/3.bd0e402a.chunk.js.map": "/tienda-lol-reactJs/static/js/3.bd0e402a.chunk.js.map",
     "index.html": "/tienda-lol-reactJs/index.html",
-    "static/css/main.af813301.chunk.css.map": "/tienda-lol-reactJs/static/css/main.af813301.chunk.css.map",
+    "static/css/main.12fb9e0b.chunk.css.map": "/tienda-lol-reactJs/static/css/main.12fb9e0b.chunk.css.map",
     "static/js/2.8a118bea.chunk.js.LICENSE.txt": "/tienda-lol-reactJs/static/js/2.8a118bea.chunk.js.LICENSE.txt",
     "static/media/intelLogo.d8c5ddd1.png": "/tienda-lol-reactJs/static/media/intelLogo.d8c5ddd1.png",
     "static/media/riot-games.0fe1faef.svg": "/tienda-lol-reactJs/static/media/riot-games.0fe1faef.svg",
     "static/media/twitchLogo.46e4f1f3.webp": "/tienda-lol-reactJs/static/media/twitchLogo.46e4f1f3.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.09b5b1e3.js",
+    "static/js/runtime-main.2b049c6d.js",
     "static/js/2.8a118bea.chunk.js",
-    "static/css/main.af813301.chunk.css",
-    "static/js/main.2f306bde.chunk.js"
+    "static/css/main.12fb9e0b.chunk.css",
+    "static/js/main.b6753d31.chunk.js"
   ]
 }
