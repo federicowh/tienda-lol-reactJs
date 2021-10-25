@@ -1,5 +1,5 @@
-import './footer.css';
 import React from 'react';
+import { FooterTitle } from './FooterTitle/FooterTitle'
 import { FooterSponsors } from './FooterSponsors/FooterSponsors';
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
 
     return (
         <>
-            <p className="footerTitle">{footerTitle}</p>
+            <FooterTitle footerTitle={footerTitle} />
 
             <FooterSponsors />
         </>
