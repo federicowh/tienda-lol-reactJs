@@ -37,8 +37,8 @@ export const UserAuthenticate = () => {
 
                         <p>o usa tu cuenta</p>
 
-                        <input type="name" placeholder="Usuario" />
-                        <input type="password" placeholder="Contraseña" />
+                        <input type="name" placeholder="Usuario" autoComplete="off" />
+                        <input type="password" placeholder="Contraseña" autoComplete="off" />
 
                         <span onClick={handleSubmit}>Login</span>
                     </form>
