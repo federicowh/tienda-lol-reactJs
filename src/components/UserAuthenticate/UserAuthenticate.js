@@ -19,19 +19,19 @@ export const UserAuthenticate = () => {
 
                         <div className="social-container">
                             <a href="#">
-                                <box-icon type='logo' name='facebook-circle' color="black" size="md"></box-icon>
+                                <box-icon type='logo' name='facebook-circle' color="black" size="md" animation="tada-hover"></box-icon>
                             </a>
 
                             <a href="#">
-                                <box-icon name='twitter' type='logo' color="black" size="md"></box-icon>
+                                <box-icon name='twitter' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
                             </a>
 
                             <a href="#">
-                                <box-icon name='instagram' type='logo' color="black" size="md"></box-icon>
+                                <box-icon name='instagram' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
                             </a>
 
                             <a href="#">
-                                <box-icon name='linkedin' type='logo' color="black" size="md"></box-icon>
+                                <box-icon name='linkedin' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
                             </a>
                         </div>
 
