@@ -11,6 +11,10 @@ export const CartWidget = () => {
         setIsAuthenticated(false)
     }
 
+    const pleaseLogIn = () => {
+        alert('Porfavor, para ver tu carrito clickea en Login o Registrate')
+    }
+
     const { cartItemQuantity } = useContext(CartContext)
 
     return (
@@ -18,6 +22,7 @@ export const CartWidget = () => {
 
             { isAuthenticated 
                 ?
+                <>
                 <box-icon onClick={handleSubmit}
                     name='log-out-circle' 
                     size='md'
@@ -25,16 +30,7 @@ export const CartWidget = () => {
                     style={{cursor: "pointer", marginRight: "50px",}}
                 ></box-icon>
 
-                : 
-                <box-icon 
-                    name='user-circle'
-                    size='md'
-                    animation='tada-hover'
-                    style={{cursor: "pointer", marginRight: "50px",}}
-                ></box-icon>
-            }
-
-            <Link to="/cart">
+                <Link to="/cart">
                 <box-icon
                     type='solid' 
                     name='cart'
@@ -42,8 +38,18 @@ export const CartWidget = () => {
                     animation='tada-hover'
                     style={{cursor: "pointer",}}
                 ></box-icon>
-            </Link>
-            <span className="itemQuantity">{cartItemQuantity()}</span>
+                </Link>
+                <span className="itemQuantity">{cartItemQuantity()}</span>
+                </>
+
+                : 
+                <box-icon onClick={pleaseLogIn}
+                    name='user-circle'
+                    size='md'
+                    animation='tada-hover'
+                    style={{cursor: "pointer", marginRight: "50px",}}
+                ></box-icon>
+            }
         </div>
     )
 }
