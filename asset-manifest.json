@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tienda-lol-reactJs/static/css/main.7b8e4a74.chunk.css",
-    "main.js": "/tienda-lol-reactJs/static/js/main.f893e78b.chunk.js",
-    "main.js.map": "/tienda-lol-reactJs/static/js/main.f893e78b.chunk.js.map",
+    "main.js": "/tienda-lol-reactJs/static/js/main.ef4800fa.chunk.js",
+    "main.js.map": "/tienda-lol-reactJs/static/js/main.ef4800fa.chunk.js.map",
     "runtime-main.js": "/tienda-lol-reactJs/static/js/runtime-main.2b049c6d.js",
     "runtime-main.js.map": "/tienda-lol-reactJs/static/js/runtime-main.2b049c6d.js.map",
     "static/js/2.8a118bea.chunk.js": "/tienda-lol-reactJs/static/js/2.8a118bea.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.2b049c6d.js",
     "static/js/2.8a118bea.chunk.js",
     "static/css/main.7b8e4a74.chunk.css",
-    "static/js/main.f893e78b.chunk.js"
+    "static/js/main.ef4800fa.chunk.js"
   ]
 }
