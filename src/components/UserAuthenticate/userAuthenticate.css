@@ -20,6 +20,10 @@
     height: 500px;
 }
 
+.logInContainerLeft span{
+    margin: auto;
+}
+
 .logInContainerRight{
     background-color: #EBA272;
     display: flex;
@@ -51,7 +55,8 @@
     flex-flow: row wrap;
     justify-content: center;
     padding: 20px;
-    margin: 10px;
+    margin-top: 25px;
+    max-width: 200px;
 
     cursor: pointer;
     transition: all 0.5s;

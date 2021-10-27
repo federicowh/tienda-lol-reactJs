@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { UserAuthContext } from '../../context/UserAuthContext'
 import '../UserAuthenticate/userAuthenticate.css'
 
@@ -18,27 +18,28 @@ export const UserAuthenticate = () => {
                         <h1>¡Ingresa con tu usuario!</h1>
 
                         <div className="social-container">
-                            <a href="#">
-                                <box-icon type='logo' name='facebook-circle' color="black" size="md" animation="tada-hover"></box-icon>
-                            </a>
+                            <a href="#"> <box-icon type='logo' name='facebook-circle' color="black" size="md" animation="tada-hover"></box-icon> </a>
 
-                            <a href="#">
-                                <box-icon name='twitter' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
-                            </a>
+                            <a href="#"> <box-icon name='twitter' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
 
-                            <a href="#">
-                                <box-icon name='instagram' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
-                            </a>
+                            <a href="#"> <box-icon name='instagram' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
 
-                            <a href="#">
-                                <box-icon name='linkedin' type='logo' color="black" size="md" animation="tada-hover"></box-icon>
-                            </a>
+                            <a href="#"> <box-icon name='linkedin' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
                         </div>
 
                         <p>o usa tu cuenta</p>
 
-                        <input type="name" placeholder="Usuario" autoComplete="off" />
-                        <input type="password" placeholder="Contraseña" autoComplete="off" />
+                        <input 
+                            type="name"
+                            placeholder="Usuario" 
+                            autoComplete="off"
+                        />
+
+                        <input 
+                            type="password"
+                            placeholder="Contraseña" 
+                            autoComplete="off"
+                        /> 
 
                         <span onClick={handleSubmit}>Login</span>
                     </form>

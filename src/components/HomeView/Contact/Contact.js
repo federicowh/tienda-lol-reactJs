@@ -19,8 +19,6 @@ export const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        console.log(values)
     }
 
     return (
@@ -57,18 +55,10 @@ export const Contact = () => {
                             <p>Conecta con nosotros :</p>
 
                             <div className="social-icons">
-                                <a href="#">
-                                    <box-icon type='logo' name='facebook-circle' color="white" ></box-icon>
-                                </a>
-                                <a href="#">
-                                    <box-icon name='twitter' type='logo' color="white" ></box-icon>
-                                </a>
-                                <a href="#">
-                                    <box-icon name='instagram' type='logo' color="white" ></box-icon>
-                                </a>
-                                <a href="#">
-                                    <box-icon name='linkedin' type='logo' color="white" ></box-icon>
-                                </a>
+                                <a href="#"> <box-icon type='logo' name='facebook-circle' color="white"></box-icon> </a>
+                                <a href="#"> <box-icon name='twitter' type='logo' color="white"></box-icon> </a>
+                                <a href="#"> <box-icon name='instagram' type='logo' color="white"></box-icon> </a>
+                                <a href="#"> <box-icon name='linkedin' type='logo' color="white"></box-icon> </a>
                             </div>
                         </div>
                     </div>
