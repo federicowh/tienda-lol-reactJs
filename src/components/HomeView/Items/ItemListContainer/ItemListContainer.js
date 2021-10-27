@@ -4,7 +4,6 @@ import { askForProducts } from '../../../../functions/askForProducts'
 import { Loader } from '../../../../utilities/Loader/Loader'
 import { ItemList } from './ItemList'
 import { UIContext } from '../../../../context/UIContext'
-import './items.css'
 
 export const ItemListContainer = () => {
 
