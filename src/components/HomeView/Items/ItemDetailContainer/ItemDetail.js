@@ -6,9 +6,11 @@ import { ItemCount } from '../ItemCount/ItemCount'
 import { ItemShow } from './ItemShow/ItemShow'
 import '../../Items/ItemDetailContainer/itemDetail.css'
 
-export const ItemDetail = ({id, name, price, img, img1, img2, img3, description, category, stock}) => {
+export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description, category, stock }) => {
 
-    const items = {id, name, img, img1, img2, img3, description, category, stock}
+    const items = { id, name, img, img1, img2, img3, description, category, stock }
+
+    const { removeItem } = useContext(CartContext)
 
     const {goBack, push} = useHistory()
 
@@ -31,23 +33,38 @@ export const ItemDetail = ({id, name, price, img, img1, img2, img3, description,
         }
     }
 
+    const styles = {
+        btnAddToCart: isInCart(id) ? "itemBtnActive" : "itemBtn",
+    }
+
     return (
         <div className="itemContainer">
             <ItemShow {...items} />
 
             <div className="itemInfo">
-                <h2 className="itemName">{name}</h2>
+                <h2>{name}</h2>
                 <p>Descripción: {description}</p>
                 <p>Categoría: {category}</p>
                 <h4>Precio: ${price}</h4>
 
-                <div className="itemBtn">
+                <div className={styles.btnAddToCart}>
                     <ItemCount quantity={quantity} modifyQuantity={setQuantity} max={stock} />
-                    <button disabled={isInCart(id)} onClick={handleAdd}>
+                    <button 
+                        onClick={handleAdd}
+                        >
                         Agregar al Carrito
                     </button>
                 </div> 
-                { isInCart(id) && <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><div className="itemBtn"><button>Finalizar compra</button></div></Link> } 
+
+                { isInCart(id) 
+
+                    &&
+
+                    <div className="itemBtn"> 
+                        <button onClick={ () => removeItem(id) }>Cancelar compra</button>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><button>Finalizar compra</button></Link>
+                    </div>
+                } 
 
                 <div className="itemBtn">
                     <button onClick={ () => goBack() }>

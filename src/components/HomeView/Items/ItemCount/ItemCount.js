@@ -15,15 +15,26 @@ export const ItemCount = ( {quantity, modifyQuantity, max} ) => {
         }
     }
 
+    const styles = {
+        btnMin: `${quantity <= 1 ? "itemBtnActived" : ""}`,
+        btnMax: `${quantity === max ? "itemBtnActived" : ""}`
+    }
+
     return (
         <div className="itemCountContainer">
-            <button onClick={handleRestar}>
+            <button 
+            onClick={handleRestar}
+            className={styles.btnMin}
+            >
                 -
             </button>
 
             <span>{quantity}</span>
 
-            <button onClick={handleSumar}>
+            <button 
+            onClick={handleSumar}
+            className={styles.btnMax}
+            >
                 +
             </button>
         </div>

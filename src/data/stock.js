@@ -1,4 +1,4 @@
-export const stock = [
+export const stock =[
     {
         id: 1,
         name: "Figura: Evelynn Unlocked",
@@ -9,7 +9,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt0eabd698e5a71875/5f59440b99e737658fb1c810/12-09-2019171320170_Riot_20Games_02.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt1699fb29d6c80ec8/5f59440bede171090f242fcb/12-09-2019171320173_Riot_20Games_03.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt6e98af4693663d9d/5fc57b1809ed4c6f277f17c3/Ahri_03.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt9c3b0f04c6027cd7/5fc57b1c09ed4c6f277f17c7/Ahri_04.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltec2a471d6c37044e/5f594267ed0fba061fe831a5/12-03-2018_2022_10_50_568_JINX-BACK_20copy.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt35f22c3ed78168ab/5f59426861ea7d30ca5a2460/12-03-2018_2022_10_57_252_JINX-MUG_20copy.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltf04369055401d629/60de2cf911bee665103e3d21/Riot_Sentinels_Promo-Ecomm-Portrait-Viego_Statue-Box-2560x2560.png",
         img3: "https://pbs.twimg.com/media/E5wE_EtVgAAPpxf?format=png&name=900x900",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blte129b5ba1a84534f/5fb46dbf65bdd35303e032b7/Jhin_01.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt7a2d8298b3738f88/5fb46dc64e40cf53001f793b/Jhin_04.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt1b2d2e4fa62bf9dd/5f59430ce3d94f39696d4bcc/11-25-2019173701157_Yasuo-Right.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt546760d694cec852/5f59430d793a1a5b6f8cee3d/11-21-2019002914390_Yasuo-Box.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt7fd559a63d0fb2ed/5f5943044b348974c2baf812/11-25-2019174007254_Riven-Detail_20Armor-2.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt83b259f481640988/5f594304afb23a07bc743ebe/11-25-2019174000439_Unlocked-Ecomm-3-riven.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 8,
@@ -93,7 +93,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltd5adf550f604228f/5f59415906bc7e2e6e50ed03/2018-09-07_2000_15_16.187_riot_games-2017-08-16_star_guardian_ekko_worlds_tibbers_3730.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt9da4241ea62ecbcd/5f59415a049e1762e40e329b/2018-09-07_2000_15_16.788_riot_games-2017-08-16_star_guardian_ekko_worlds_tibbers_3726_copy.png",
         category: 'Figuras',
-        stock: 20
+        stock: 15
     },
     {
         id: 9,
@@ -105,7 +105,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt1a4351177807d164/615387aad4224e7daaed3f84/Unisex-Tee-Gold-detail02-v1.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt95176af518021e3a/615387b1947b692d209b7f65/WORLDS-1_0397-2560x3200.jpg",
         category: 'Remeras',
-        stock: 20
+        stock: 15
     },
     {
         id: 10,
@@ -117,7 +117,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt59cf7bbcee3f8fed/61538768f6002c7a00497b5a/Unisex-Tee-Jade-detail02-v3.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltc163c2a2c88b2a3d/6153877077d06a0c98360a7c/WORLDS-2_0685-2560x3200.jpg",
         category: 'Remeras',
-        stock: 20
+        stock: 15
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt54bc1ec1aa1ce106/609599c2cf14c84a993df24b/Kai_sa_tee_03.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt808024564785321f/609599c501ff5a556925bf7e/Kai_sa_tee_04.png",
         category: 'Remeras',
-        stock: 20
+        stock: 15
     },
     {
         id: 12,
@@ -141,7 +141,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blta22bd06f0f887f75/5f5946b75a02e758c950c014/2018-09-07_2000_19_52.331_2-1_1.png",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt492913346969800c/5f5946b808b63f2fb0c9d291/2018-09-07_2000_19_52.943_2-2_1.png",
         category: 'Remeras',
-        stock: 20
+        stock: 15
     },
     {
         id: 13,
@@ -153,7 +153,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltff91eeb36cd38501/615384290332d478b9d32d8d/Flight-Jacket-detail02-v1.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blte8e3b2424b424805/6153842c69b7947c1b3b0084/VALORANT-3_1875-2560x3200.jpg",
         category: 'Camperas',
-        stock: 20
+        stock: 15
     },
     {
         id: 14,
@@ -165,7 +165,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blte3bc8ed962ecaf38/615386a98440e97ef5829de0/Premium-ZipUp-Hoodie-back-v1.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltc7c1754364b07269/615386b264c8007a9bded33d/Premium-ZipUp-Hoodie-detail02-v1.jpg",
         category: 'Camperas',
-        stock: 20
+        stock: 15
     },
     {
         id: 15,
@@ -177,7 +177,7 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt0b8ddfaec4365dff/615383ae564bf37c154fab24/Track-Jacket-front-L-v2.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt03b18605b450ec1d/615383b869b7947c1b3b0080/Track-Jacket-detail01-v1.jpg",
         category: 'Camperas',
-        stock: 20
+        stock: 15
     },
     {
         id: 16,
@@ -189,6 +189,6 @@ export const stock = [
         img2: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blta73eb3ebab495003/6042b2995aedc043351b616e/Jacket_03.jpg",
         img3: "https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltb36e5b0bb016ca50/6042b29c1322a9094ddee7ae/Jacket_04.jpg",
         category: 'Camperas',
-        stock: 20
+        stock: 15
     },
 ]

@@ -48,14 +48,14 @@
     width: 50%;
 }
 
-.itemName{
+.itemInfo h2{
     font-style: italic;
 }
 
 .itemInfo p, h4{
     font-style: italic;
-    padding: 10px;
-    margin: 10px;
+    padding: 0px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
 }
 
 .itemInfo h4{
@@ -76,7 +76,7 @@
 }
 
 .itemBtn button{
-    background-color: #ffff;
+    background-color: white;
     border: none;
     cursor: pointer;
     padding: 15px;
@@ -89,4 +89,35 @@
     color: #EBA272;
     background-color: black;
     box-shadow: inset 0 0 0 5px #EBA272;
+}
+
+/* ItemDetail desactivar/activar */
+.itemBtnActive{
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    width: 100%;
+
+    font-size: 18px;
+    font-style: italic;
+    pointer-events: none;
+}
+
+.itemBtnActive button{
+    font-size: 18px;
+    font-style: italic;
+    border: none;
+    background-color: white;
+    padding: 15px;
+    color: gray;
+    opacity: 0.5;
+}
+
+/* ItemCount desactivar/activar */
+.itemBtnActived{
+    opacity: 0.5;
+    color: gray;
+    pointer-events: none;
 }
