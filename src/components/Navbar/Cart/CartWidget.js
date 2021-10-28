@@ -1,8 +1,8 @@
-import '../../Navbar/Cart/cartWidget.css';
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../../context/CartContext'
 import { UserAuthContext } from '../../../context/UserAuthContext'
+import '../../Navbar/Cart/cartWidget.css';
 
 export const CartWidget = () => {
 
@@ -23,32 +23,41 @@ export const CartWidget = () => {
             { isAuthenticated 
                 ?
                 <>
-                <box-icon onClick={handleSubmit}
-                    name='log-out-circle' 
-                    size='md'
-                    animation='tada-hover'
-                    style={{cursor: "pointer", marginRight: "50px",}}
-                ></box-icon>
+                    <box-icon onClick={handleSubmit}
+                        name='log-out-circle' 
+                        size='md'
+                        animation='tada-hover'
+                        style={{cursor: "pointer", marginRight: "50px",}}
+                    ></box-icon>
+                    
+                    <Link to="/cart">
+                        <box-icon
+                            type='solid' 
+                            name='cart'
+                            size='md'
+                            animation='tada-hover'
+                            style={{
+                                cursor: "pointer",
+                                display: cartItemQuantity() === 0 ? "none" : "block"
+                            }}
+                        ></box-icon>
+                    </Link>
 
-                <Link to="/cart">
-                <box-icon
-                    type='solid' 
-                    name='cart'
-                    size='md'
-                    animation='tada-hover'
-                    style={{cursor: "pointer",}}
-                ></box-icon>
-                </Link>
-                <span className="itemQuantity">{cartItemQuantity()}</span>
+                    <span 
+                        className="itemQuantity"
+                        style={{display: cartItemQuantity() === 0 ? "none" : "block"}}
+                    >
+                        {cartItemQuantity()}
+                    </span>
                 </>
 
                 : 
-                <box-icon onClick={pleaseLogIn}
-                    name='user-circle'
-                    size='md'
-                    animation='tada-hover'
-                    style={{cursor: "pointer", marginRight: "50px",}}
-                ></box-icon>
+                    <box-icon onClick={pleaseLogIn}
+                        name='user-circle'
+                        size='md'
+                        animation='tada-hover'
+                        style={{cursor: "pointer", marginRight: "50px",}}
+                    ></box-icon>
             }
         </div>
     )

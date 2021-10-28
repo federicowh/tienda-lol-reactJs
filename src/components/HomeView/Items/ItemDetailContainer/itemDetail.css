@@ -121,3 +121,9 @@
     color: gray;
     pointer-events: none;
 }
+
+@media (max-width: 1150px) {
+    .itemShowNav {
+        display: none;
+    }
+}
