@@ -15,7 +15,7 @@ export const ItemList = ({ items = [] }) => {
                         <p className="itemPrice">$ {item.price}</p>
 
                         <div className="itemBuy">
-                            <Link style={{ textDecoration: 'none', color: 'white' }} to={`/detail/${item.id}`}><span className="buyNow">Ver Info</span></Link>
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to={`/detail/${item.id}`}><span className="buyNow">Ver más</span></Link>
                             <Link style={{ textDecoration: 'none', color: 'white' }} to={`/detail/${item.id}`}><span className="addToCart">Agregar al carrito</span></Link>
                         </div>
                     </div>

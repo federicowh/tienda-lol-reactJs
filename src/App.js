@@ -4,7 +4,8 @@ import { UIProvider } from './context/UIContext';
 import { 
   BrowserRouter as Router, 
   Switch, 
-  Route } from "react-router-dom";
+  Route,
+  Redirect } from "react-router-dom";
 import './global.css';
 import 'boxicons';
 import { Navbar } from './components/Navbar/Navbar';
@@ -50,6 +51,10 @@ function App() {
 
               <Route exact path="/cart">
                 <Shopping />
+              </Route>
+
+              <Route path="*">
+                <Redirect to="/tienda-lol-reactJs"/>
               </Route>
               </>
 

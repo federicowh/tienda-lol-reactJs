@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import { askForProducts } from '../../../../functions/askForProducts'
 import { Loader } from '../../../../utilities/Loader/Loader'
 import { ItemList } from './ItemList'
 import { UIContext } from '../../../../context/UIContext'
+import { getFirestore } from '../../../../firebase/FirebaseConfig'
 
 export const ItemListContainer = () => {
 
@@ -13,22 +13,28 @@ export const ItemListContainer = () => {
 
     const {categoryId} = useParams()
 
-    useEffect(() => {
+    useEffect( () => {
+
         setLoading(true)
 
-        askForProducts()
-            .then((res) => {
+        const db = getFirestore()
+        const products = categoryId 
+            ? db.collection('products').where('category', '==', categoryId)
+            : db.collection('products')
 
-                if (categoryId) {
-                    setItems(res.filter( prod => prod.category === categoryId))
-                } else {
-                    setItems( res )
-                }
+        products.get()
+        .then( (response) => {
+            const newProducts = response.docs.map( (doc) => {
+                return { id: doc.id, ...doc.data() }
             })
-            .catch((err) => console.log(err))
-            .finally(() =>{
-                setLoading(false)
-            })
+
+            setItems(newProducts)
+        })
+        .catch( err => console.log(err) )
+        .finally( () => {
+            setLoading(false)
+        })
+
     }, [categoryId, setLoading])
 
     return (
