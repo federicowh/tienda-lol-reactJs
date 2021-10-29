@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tienda-lol-reactJs/static/css/main.6094e3e3.chunk.css",
-    "main.js": "/tienda-lol-reactJs/static/js/main.88acd76c.chunk.js",
-    "main.js.map": "/tienda-lol-reactJs/static/js/main.88acd76c.chunk.js.map",
+    "main.css": "/tienda-lol-reactJs/static/css/main.9dd2a6ce.chunk.css",
+    "main.js": "/tienda-lol-reactJs/static/js/main.55ceb83a.chunk.js",
+    "main.js.map": "/tienda-lol-reactJs/static/js/main.55ceb83a.chunk.js.map",
     "runtime-main.js": "/tienda-lol-reactJs/static/js/runtime-main.787f4fa6.js",
     "runtime-main.js.map": "/tienda-lol-reactJs/static/js/runtime-main.787f4fa6.js.map",
     "static/js/2.940cd988.chunk.js": "/tienda-lol-reactJs/static/js/2.940cd988.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1e63830c.chunk.js": "/tienda-lol-reactJs/static/js/3.1e63830c.chunk.js",
     "static/js/3.1e63830c.chunk.js.map": "/tienda-lol-reactJs/static/js/3.1e63830c.chunk.js.map",
     "index.html": "/tienda-lol-reactJs/index.html",
-    "static/css/main.6094e3e3.chunk.css.map": "/tienda-lol-reactJs/static/css/main.6094e3e3.chunk.css.map",
+    "static/css/main.9dd2a6ce.chunk.css.map": "/tienda-lol-reactJs/static/css/main.9dd2a6ce.chunk.css.map",
     "static/js/2.940cd988.chunk.js.LICENSE.txt": "/tienda-lol-reactJs/static/js/2.940cd988.chunk.js.LICENSE.txt",
     "static/media/intelLogo.d8c5ddd1.png": "/tienda-lol-reactJs/static/media/intelLogo.d8c5ddd1.png",
     "static/media/riot-games.0fe1faef.svg": "/tienda-lol-reactJs/static/media/riot-games.0fe1faef.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.787f4fa6.js",
     "static/js/2.940cd988.chunk.js",
-    "static/css/main.6094e3e3.chunk.css",
-    "static/js/main.88acd76c.chunk.js"
+    "static/css/main.9dd2a6ce.chunk.css",
+    "static/js/main.55ceb83a.chunk.js"
   ]
 }
