@@ -6,8 +6,6 @@ import {
   Switch, 
   Route,
   Redirect } from "react-router-dom";
-import './global.css';
-import 'boxicons';
 import { Navbar } from './components/Navbar/Navbar';
 import { HomeView } from './components/HomeView/HomeView';
 import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailContainer/ItemDetailContainer';
@@ -16,6 +14,8 @@ import { Contact } from './components/HomeView/Contact/Contact'
 import { Footer } from './components/Footer/Footer';
 import { UserAuthContext } from './context/UserAuthContext';
 import { UserAuthenticate } from './components/UserAuthenticate/UserAuthenticate';
+import 'boxicons';
+import './global.css';
 
 function App() {
 
