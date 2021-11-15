@@ -9,8 +9,9 @@ import {
 import { Navbar } from './components/Navbar/Navbar';
 import { HomeView } from './components/HomeView/HomeView';
 import { ItemDetailContainer } from './components/HomeView/Items/ItemDetailContainer/ItemDetailContainer';
-import { Shopping } from './components/HomeView/Shopping/Shopping'
-import { Contact } from './components/HomeView/Contact/Contact'
+import { Shopping } from './components/HomeView/Shopping/Shopping';
+import { Checkout } from './components/HomeView/Checkout/Checkout';
+import { Contact } from './components/HomeView/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { UserAuthContext } from './context/UserAuthContext';
 import { UserAuthenticate } from './components/UserAuthenticate/UserAuthenticate';
@@ -53,8 +54,8 @@ function App() {
                 <Shopping />
               </Route>
 
-              <Route path="*">
-                <Redirect to="/tienda-lol-reactJs"/>
+              <Route exact path="/checkout">
+                <Checkout />
               </Route>
               </>
 

@@ -6,7 +6,7 @@ export const Clock = () => {
     const [time, setTime] = useState( new Date() )
 
     useEffect( () => {
-        
+
         setTimeout( () => {
             setTime( new Date() )
         }, 1000);

@@ -1,0 +1,59 @@
+.checkoutContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.checkoutContainer h3{
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.checkoutContainer form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutInputContainer{
+    margin: 20px;
+    width: 450px;
+}
+
+.checkoutInputContainer input{
+    background-color: #EBA272;
+    color: black;
+    border: 2px solid black;
+}
+
+.checkoutInputContainer input::placeholder{
+    color: black;
+}
+
+.checkoutBtn{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 200px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.checkoutBtn:hover{
+    color: #EBA272;
+    background-color: black;
+    box-shadow: inset 0 0 0 10px #EBA272;
+}

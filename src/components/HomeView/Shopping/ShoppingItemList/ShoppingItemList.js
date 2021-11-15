@@ -6,7 +6,7 @@ export const ShoppingItemList = () => {
 
     return (
         cart.map( (prod) => (
-            <div className="itemCartFinal">
+            <div key={prod.id} className="itemCartFinal">
                 <img src={prod.img} alt={prod.name} />
                 <h3>{prod.name}</h3>
                 <p>Cantidad: {prod.quantity} </p>
