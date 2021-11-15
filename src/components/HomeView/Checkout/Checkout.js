@@ -3,11 +3,9 @@ import { Redirect } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
 import { UIContext } from '../../../context/UIContext'
 import { Loader } from '../../../utilities/Loader/Loader'
-import { getFirestore } from '../../../firebase/FirebaseConfig'
-import firebase from 'firebase'
-import 'firebase/firestore'
 import Swal from 'sweetalert2'
 import './checkout.css'
+import { FirebaseOrder } from '../../../firebase/FirebaseOrder'
 
 export const Checkout = () => {
 
@@ -29,7 +27,7 @@ export const Checkout = () => {
         })
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         if (values.name.length < 3 ) {
@@ -52,67 +50,28 @@ export const Checkout = () => {
             return
         }
 
-        const order = {
-            buyer: {
-                ...values
-            },
-            items: cart.map((prus) => ({id: prus.id, price: prus.price, name: prus.name, quantity: prus.quantity})),
-            total: cartFinalPrice(),
-            date: firebase.firestore.Timestamp.fromDate(new Date())
-        }
-
-        const db = getFirestore()
-        const orders = db.collection('orders')
-        const itemsToUpdate = db.collection('products')
-            .where(firebase.firestore.FieldPath.documentId(), 'in', cart.map(prus => prus.id));
-
-        const query = await itemsToUpdate.get()
-        const batch = db.batch()
-
-        const outOfStock = []
-
-        query.docs.forEach((doc) => {
-            const itemInCart = cart.find(prod => prod.id === doc.id)
-
-            if (doc.data().stock >= itemInCart.quantity) {
-                batch.update(doc.ref, {stock: doc.data().stock - itemInCart.quantity})
-            } else {
-                outOfStock.push({...doc.data(), id: doc.id})
-            }
-        })
-
-        if (outOfStock.length === 0) {
-            setLoading(true)
-            orders.add(order)
-                .then((res) => {
-                    batch.commit()
-
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Su compra fue registrada con éxito!',
-                        text: `Anote su número de orden: ${res.id}`,
-                        willClose: () => {
-                            deleteAll()
-                        }
-                    })
+        setLoading(true)
+        FirebaseOrder(values, cart, cartFinalPrice())
+            .then((res) => {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Su compra fue registrada con éxito!',
+                    text: `Anote su número de orden: ${res.id}`,
+                    willClose: () => {
+                        deleteAll()
+                    }
                 })
-                .catch((err) => {
-                    Swal.fire({
-                        icon: 'error',
-                        title: '¡Algo salió mal!',
-                        text: 'No se ha podido finalizar la compra.',
-                    })
-                })
-                .finally(() => {
-                    setLoading(false)
-                })
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Producto sin stock',
-                text: outOfStock.map(prus => prus.name).join(', ')
             })
-        }
+            .catch((err) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Productos sin stock',
+                    text: `No hay stock de: ${err.map(prus => prus.name).join(', ')}`
+                })
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }
 
     return (
