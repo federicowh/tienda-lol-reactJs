@@ -20,7 +20,6 @@ export const Checkout = () => {
     })
 
     const handleInputChange = (e) => {
-
         setValues({
             ...values,
             [e.target.name]: e.target.value
@@ -31,22 +30,38 @@ export const Checkout = () => {
         e.preventDefault()
 
         if (values.name.length < 3 ) {
-            alert('Nombre inválido')
+            Swal.fire({
+                icon: 'error',
+                title: 'El nombre es inválido',
+                text: 'El nombre ingresado debe tener más de 3 carácteres.'
+            })
             return
         }
 
         if (values.surname.length < 3 ) {
-            alert('Apellido inválido')
+            Swal.fire({
+                icon: 'error',
+                title: 'El apellido es inválido',
+                text: 'El apellido ingresado debe tener más de 3 carácteres.'
+            })
             return
         }
 
         if (values.email.length < 3 ) {
-            alert('Email inválido')
+            Swal.fire({
+                icon: 'error',
+                title: 'El email ingresado es incorrecto',
+                text: 'El email ingresado debe tener más de 3 carácteres.'
+            })
             return
         }
 
         if (values.tel.length < 7 ) {
-            alert('Teléfono inválido')
+            Swal.fire({
+                icon: 'error',
+                title: 'El teléfono ingresado no es correcto',
+                text: 'Asegúrese que el número ingresado contenga 8 números al menos'
+            })
             return
         }
 
@@ -140,4 +155,3 @@ export const Checkout = () => {
         </>
     )
 }
-
