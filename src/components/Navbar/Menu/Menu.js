@@ -1,7 +1,7 @@
-import '../../Navbar/Menu/menu.css'
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { UserAuthContext } from '../../../context/UserAuthContext';
+import '../../Navbar/Menu/menu.css'
 
 export const Menu = () => {
 

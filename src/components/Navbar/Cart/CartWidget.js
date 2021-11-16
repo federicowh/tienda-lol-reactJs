@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../../context/CartContext'
 import { UserAuthContext } from '../../../context/UserAuthContext'
+import Swal from 'sweetalert2'
 import '../../Navbar/Cart/cartWidget.css';
 
 export const CartWidget = () => {
@@ -12,7 +13,11 @@ export const CartWidget = () => {
     }
 
     const pleaseLogIn = () => {
-        alert('Porfavor, para ver tu carrito clickea en Login o Registrate')
+        Swal.fire({
+            icon: 'error',
+            title: '¡No puedes entrar aquí!',
+            text: 'Porfavor, debes completar los datos para entrar con un usuario.'
+        })
     }
 
     const { cartItemQuantity } = useContext(CartContext)

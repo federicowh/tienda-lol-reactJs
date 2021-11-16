@@ -3,9 +3,10 @@ import { Redirect } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
 import { UIContext } from '../../../context/UIContext'
 import { Loader } from '../../../utilities/Loader/Loader'
+import { FirebaseOrder } from '../../../firebase/FirebaseOrder'
 import Swal from 'sweetalert2'
 import './checkout.css'
-import { FirebaseOrder } from '../../../firebase/FirebaseOrder'
+
 
 export const Checkout = () => {
 
