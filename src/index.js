@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './global.css';
 import App from './App';
-import { UserAuthProvider } from './context/UserAuthContext';
 import reportWebVitals from './reportWebVitals';
+import { UserAuthProvider } from './context/UserAuthContext';
+import './global.css';
 
 ReactDOM.render(
   <React.StrictMode>
