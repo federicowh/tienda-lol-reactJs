@@ -18,13 +18,13 @@ export const UserAuthenticate = () => {
                         <h1>¡Ingresa con tu usuario!</h1>
 
                         <div className="social-container">
-                            <a href="#"> <box-icon type='logo' name='facebook-circle' color="black" size="md" animation="tada-hover"></box-icon> </a>
+                            <box-icon type='logo' name='facebook-circle' color="black" size="md" animation="tada-hover"></box-icon> 
 
-                            <a href="#"> <box-icon name='twitter' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
+                            <box-icon type='logo' name='twitter' color="black" size="md" animation="tada-hover"></box-icon> 
 
-                            <a href="#"> <box-icon name='instagram' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
+                            <box-icon type='logo' name='instagram' color="black" size="md" animation="tada-hover"></box-icon> 
 
-                            <a href="#"> <box-icon name='linkedin' type='logo' color="black" size="md" animation="tada-hover"></box-icon> </a>
+                            <box-icon type='logo' name='linkedin' color="black" size="md" animation="tada-hover"></box-icon>
                         </div>
 
                         <p>o usa tu cuenta</p>

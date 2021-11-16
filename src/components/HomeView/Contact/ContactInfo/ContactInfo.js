@@ -31,9 +31,9 @@ export const ContactInfo = ( props ) => {
 
                 <div className="social-icons">
                     <i><box-icon type='logo' name='facebook-circle' color="white"></box-icon></i>
-                    <i><box-icon name='twitter' type='logo' color="white"></box-icon></i>
-                    <i><box-icon name='instagram' type='logo' color="white"></box-icon></i>
-                    <i><box-icon name='linkedin' type='logo' color="white"></box-icon></i>
+                    <i><box-icon type='logo' name='twitter' color="white"></box-icon></i>
+                    <i><box-icon type='logo' name='instagram' color="white"></box-icon></i>
+                    <i><box-icon type='logo' name='linkedin' color="white"></box-icon></i>
                 </div>
             </div>
         </div>
