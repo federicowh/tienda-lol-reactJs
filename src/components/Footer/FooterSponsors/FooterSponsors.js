@@ -20,7 +20,7 @@ export const FooterSponsors = () => {
                 name='chevron-up-square' 
                 type='solid' 
                 size='md'
-                animation='fade-up-hover'
+                animation='tada-hover'
                 color="black"
                 style={{cursor: "pointer",}}
                 onClick={ goTop }

@@ -16,4 +16,10 @@
 .sponsorsContainer img{
     width: 120px;
     height: 80px;
+    transition: all 0.5s;
+}
+
+.sponsorsContainer img:hover{
+    transition: all 0.5s;
+    transform: scale(0.8,0.8);
 }
