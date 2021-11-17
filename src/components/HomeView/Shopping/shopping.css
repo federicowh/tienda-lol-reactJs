@@ -4,7 +4,7 @@
     justify-content: space-around;
     
     width: 90%;
-    min-height: 800px;
+    min-height: 500px;
     margin: auto;
 
     background-color: white;
@@ -32,6 +32,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.itemCartFinal h3{
+    width: 200px;
+}
+
 .itemCartFinal img{
     width: 180px;
     height: 230px;
@@ -44,24 +48,31 @@
     padding: 20px;
 }
 
-.shoppingCart span{
+.shoppingCart button{
     background-color: black;
     color: white;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     padding: 20px;
     margin: 10px;
-}
-
-.shoppingCart span{
+    width: 200px;
+    font-size: 16px;
+    font-style: italic;
+    border: none;
     cursor: pointer;
     transition: all 0.5s;
 }
-.shoppingCart span:hover{
+
+.shoppingCart button:hover{
     color: #EBA272;
     background-color: black;
     box-shadow: inset 0 0 0 10px #EBA272;
+}
+
+.shoppingFinalPrice{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .shoppingCartButtons{
@@ -69,4 +80,5 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }

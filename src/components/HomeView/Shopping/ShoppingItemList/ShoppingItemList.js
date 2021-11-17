@@ -11,7 +11,7 @@ export const ShoppingItemList = () => {
                 <h3>{prod.name}</h3>
                 <p>Cantidad: {prod.quantity} </p>
                 <p>Precio: ${prod.price * prod.quantity} </p>
-                <span onClick={ () => removeItem(prod.id) }>Quitar Producto</span>
+                <button onClick={ () => removeItem(prod.id) }>Quitar Producto</button>
             </div>
         ))
     )

@@ -13,7 +13,7 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
 
     const { removeItem } = useContext(CartContext)
 
-    const {goBack, push} = useHistory()
+    const {goBack} = useHistory()
 
     const {addToCart, isInCart} = useContext(CartContext)
 
@@ -71,18 +71,14 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
                     &&
 
                     <div className="itemBtn"> 
-                        <button onClick={ () => removeItem(id) }>Cancelar compra</button>
-                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><button>Finalizar compra</button></Link>
+                        <button onClick={ () => removeItem(id) }>Cancelar</button>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><button>¡Comprar!</button></Link>
                     </div>
                 } 
 
                 <div className="itemBtn">
                     <button onClick={ () => goBack() }>
                         Volver atrás
-                    </button>
-
-                    <button onClick={ () => push("/tienda-lol-reactJs") }>
-                        Volver al Inicio
                     </button>
                 </div>
             </div>

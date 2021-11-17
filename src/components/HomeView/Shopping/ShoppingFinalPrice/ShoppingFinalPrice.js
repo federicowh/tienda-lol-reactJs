@@ -7,17 +7,16 @@ export const ShoppingFinalPrice = () => {
 
     return (
         <>
-            <h2>Precio Total: ${cartFinalPrice()}</h2>
+            <div className="shoppingFinalPrice">
+                <h2>Precio Total: ${cartFinalPrice()}</h2>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={"/checkout"}><button className="buyNow">Finalizar compra</button></Link>
+            </div>
 
             <div className="shoppingCartButtons">
                 <div>
-                <span onClick={deleteAll}>Vaciar Carrito</span>
+                <button onClick={deleteAll}>Vaciar Carrito</button>
 
-                <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}><span className="buyNow">Seguir comprando</span></Link>
-                </div>
-
-                <div>
-                <Link style={{ textDecoration: 'none', color: 'white' }} to={"/checkout"}><span className="buyNow">Finalizar compra</span></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={"/tienda-lol-reactJs"}><button className="buyNow">Seguir comprando</button></Link>
                 </div>
             </div>
         </>

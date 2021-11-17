@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Redirect } from 'react-router'
+import { useHistory } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
 import { UIContext } from '../../../context/UIContext'
 import { Loader } from '../../../utilities/Loader/Loader'
@@ -12,6 +13,8 @@ export const Checkout = () => {
 
     const { loading, setLoading } = useContext(UIContext)
     const { cart, cartFinalPrice, deleteAll } = useContext(CartContext)
+
+    const { push } = useHistory()
 
     const [values, setValues] = useState({
         name: '',
@@ -111,7 +114,7 @@ export const Checkout = () => {
                                         value={values.name}
                                         onChange={handleInputChange}
                                     />
-                                    {values.name.length === 0 && <small>Este campo es obligatorio.</small>}
+                                    {values.name.length === 0 && <small>¡Este campo es obligatorio!</small>}
                                 </div>
 
                                 <div className="checkoutInputContainer">
@@ -123,7 +126,7 @@ export const Checkout = () => {
                                         value={values.surname}
                                         onChange={handleInputChange}
                                     />
-                                    {values.surname.length === 0 && <small>Este campo es obligatorio.</small>}
+                                    {values.surname.length === 0 && <small>¡Este campo es obligatorio!</small>}
                                 </div>
 
                                 <div className="checkoutInputContainer">
@@ -134,7 +137,7 @@ export const Checkout = () => {
                                         value={values.email}
                                         onChange={handleInputChange} 
                                     />
-                                    {values.email.length === 0 && <small>Este campo es obligatorio.</small>}
+                                    {values.email.length === 0 && <small>¡Este campo es obligatorio!</small>}
                                 </div>
 
                                 <div className="checkoutInputContainer">
@@ -146,10 +149,13 @@ export const Checkout = () => {
                                         value={values.tel}
                                         onChange={handleInputChange} 
                                     />
-                                    {values.tel.length === 0 && <small>Este campo es obligatorio.</small>}
+                                    {values.tel.length === 0 && <small>¡Este campo es obligatorio!</small>}
                                 </div>
 
-                                <button className="checkoutBtn" type="submit" disabled={loading}>Finalizar tu compra</button>
+                                <div className="checkoutBtnContainer">
+                                    <button className="checkoutBtn" onClick={ () => push("/cart")}>Cancelar compra</button>
+                                    <button className="checkoutBtn" type="submit" disabled={loading}>Finalizar tu compra</button>
+                                </div>
                             </form>
                         </div>
                     </>

@@ -73,6 +73,12 @@ export const ContactForm = () => {
 
             return
         }
+
+        Swal.fire({
+            icon: 'success',
+            title: '¡Su mensaje ha sido enviado con éxito!',
+            text: 'Pronto estaremos respondiendo al email enviado.',
+        })
     }
 
     return (
@@ -113,7 +119,7 @@ export const ContactForm = () => {
                     ></textarea>
                 </div>
 
-                <input type="submit" value="Enviar" className="btn" />
+                <input type="submit" value="Enviar" className="btn"/>
             </form>
         </div>
     )
