@@ -138,7 +138,8 @@ export const Checkout = () => {
                                 </div>
 
                                 <div className="checkoutInputContainer">
-                                    <input type="tel" 
+                                    <input 
+                                        type="tel" 
                                         name="tel" 
                                         className="input" 
                                         placeholder="Teléfono"
