@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { UserAuthContext } from '../../../context/UserAuthContext';
 import '../../Navbar/Menu/menu.css'
 
@@ -15,9 +15,10 @@ export const Menu = () => {
         <>
             <nav className={isAuthenticated ? "navbar" : "navbarNotAllowed"}>
                 <NavLink activeStyle={ styles.menuNotActive } exact to="/tienda-lol-reactJs">Inicio</NavLink>
-                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Figuras">Figuras</NavLink>
-                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Remeras">Remeras</NavLink>
-                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Camperas">Camperas</NavLink>
+                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Coleccionables">Coleccionables</NavLink>
+                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Indumentaria">Indumentaria</NavLink>
+                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Accesorios">Accesorios</NavLink>
+                <NavLink activeStyle={ styles.menuNotActive } exact to="/productos/Otros">Otros</NavLink>
                 <NavLink activeStyle={ styles.menuNotActive } exact to="/contacto">Contacto</NavLink>
             </nav>
         </>

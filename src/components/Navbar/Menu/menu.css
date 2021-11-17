@@ -35,6 +35,22 @@
     color: black;
 }
 
+.navbarNotAllowed > ul > li{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: not-allowed;
+    width: 230px;
+    text-align: center;
+}
+
+.navbarNotAllowed li:hover > .navbarSubMenu li{
+    opacity: 0;
+    display: none;
+}
+
 .navbar a{
     padding: 20px 40px 20px 40px;
     font-size: 20px;
@@ -43,10 +59,115 @@
     transition: all 1s;
     text-decoration: none;
     color: black;
+    display: block;
+    text-decoration: none;
 }
 
 .navbar a:hover{
     color: #EBA272;
     background-color: black;
-    box-shadow: inset 0 0 0 15px #EBA272;
+    box-shadow: inset 0 0 0 10px #EBA272;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 230px;
+    text-align: center;
+}
+
+.navbarSubMenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.navbarSubMenu li{
+    background-color: #DDD;
+    display: none;
+}
+
+nav li:hover > .navbarSubMenu li{
+    opacity: 1;
+    display: block;
+
+    -webkit-animation: fadeInFromNone 0.3s ease-out;
+    -moz-animation: fadeInFromNone 0.3s ease-out;
+    -o-animation: fadeInFromNone 0.3s ease-out;
+    animation: fadeInFromNone 0.3s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }

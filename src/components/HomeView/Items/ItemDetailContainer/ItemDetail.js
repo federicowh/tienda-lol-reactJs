@@ -6,9 +6,9 @@ import { ItemCount } from '../ItemCount/ItemCount'
 import { ItemShow } from './ItemShow/ItemShow'
 import '../../Items/ItemDetailContainer/itemDetail.css'
 
-export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description, category, stock }) => {
+export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description, category, subCategory, stock }) => {
 
-    const items = { id, name, img, img1, img2, img3, description, category, stock }
+    const items = { id, name, img, img1, img2, img3, description, category, subCategory, stock }
 
     const { removeItem } = useContext(CartContext)
 
@@ -44,7 +44,10 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
             <div className="itemInfo">
                 <h2>{name}</h2>
                 <p>Descripción: {description}</p>
-                <p>Categoría: {category}</p>
+                <div>
+                    <p>Categoría: {category}</p>
+                    <p>Subcategoria: {subCategory}</p>
+                </div>
                 <h4>Precio: ${price}</h4>
 
                 <div className={styles.btnAddToCart}>
