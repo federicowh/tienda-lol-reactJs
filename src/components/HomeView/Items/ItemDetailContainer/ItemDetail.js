@@ -4,6 +4,7 @@ import { useHistory } from 'react-router'
 import { Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
 import { ItemShow } from './ItemShow/ItemShow'
+import Swal from 'sweetalert2'
 import '../../Items/ItemDetailContainer/itemDetail.css'
 
 export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description, category, subCategory, stock }) => {
@@ -30,6 +31,12 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
 
         if (quantity > 0){
             addToCart(newItem)
+        } else if (quantity == 0){
+            Swal.fire({
+                icon: 'error',
+                title: 'No agregaste productos',
+                text: 'Debes agregar al menos uno para continuar.'
+            })
         }
     }
 
@@ -44,7 +51,7 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
             <div className="itemInfo">
                 <h2>{name}</h2>
                 <p>Descripción: {description}</p>
-                <div>
+                <div className="itemInfoCategory">
                     <p>Categoría: {category}</p>
                     <p>Subcategoria: {subCategory}</p>
                 </div>

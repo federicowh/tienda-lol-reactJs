@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
 
 export const ContactForm = () => {
 
@@ -18,6 +19,60 @@ export const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        if (values.name.length === 0 ) {
+            Swal.fire({
+                icon: 'error',
+                title: 'No has ingresado ningún nombre',
+                text: 'Para continuar debes ingresar tu nombre.'
+            })
+
+            return
+        } else if (values.name.length < 3) {
+            Swal.fire({
+                icon: 'error',
+                title: 'El nombre es incorrecto',
+                text: 'Asegúrese de que el nombre ingresado tenga más de 3 caracteres.'
+            })
+
+            return
+        }
+
+        if (values.email.length === 0 ) {
+            Swal.fire({
+                icon: 'error',
+                title: 'No has ingresado ningún email',
+                text: 'Para continuar debes ingresar tu email.'
+            })
+
+            return
+        } else if (values.email.length < 3) {
+            Swal.fire({
+                icon: 'error',
+                title: 'El email es incorrecto',
+                text: 'Asegúrese de que el email ingresado tenga más de 3 caracteres.'
+            })
+
+            return
+        }
+
+        if (values.message.length === 0 ) {
+            Swal.fire({
+                icon: 'error',
+                title: 'No hay mensaje en el campo de texto.',
+                text: 'Para enviar debes dejar un comentario.'
+            })
+
+            return
+        } else if (values.message.length < 3) {
+            Swal.fire({
+                icon: 'error',
+                title: '¡Comenta un poco más!',
+                text: 'Asegúrese de haber ingresado al menos 5 caracteres en el mensaje.'
+            })
+
+            return
+        }
     }
 
     return (
@@ -34,7 +89,7 @@ export const ContactForm = () => {
                         value={values.name}
                         onChange={handleInputChange}
                     />
-                    {values.name.length === 0 && <small>Este campo es obligatorio.</small>}
+                    {values.name.length === 0 && <small>¡Este campo es obligatorio!</small>}
                 </div>
 
                 <div className="input-container">
@@ -45,7 +100,7 @@ export const ContactForm = () => {
                         value={values.email}
                         onChange={handleInputChange} 
                     />
-                    {values.email.length === 0 && <small>Este campo es obligatorio.</small>}
+                    {values.email.length === 0 && <small>¡Este campo es obligatorio!</small>}
                 </div>
 
                 <div className="input-container textarea">

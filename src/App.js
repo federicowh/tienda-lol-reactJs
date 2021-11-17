@@ -57,6 +57,10 @@ function App() {
               <Route exact path="/checkout">
                 <Checkout />
               </Route>
+
+              <Route exact path="/">
+                <HomeView />
+              </Route>
               </>
 
               :

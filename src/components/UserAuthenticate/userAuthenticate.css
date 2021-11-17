@@ -82,10 +82,9 @@
 }
 
 .logInContainerRight button:hover{
-    border: 2px solid white;
     background-color: black;
-    color: white;
-    box-shadow: inset 0 0 0 10px white;
+    color: #EBA272;
+    box-shadow: inset 0 0 0 10px gray;
 }
 
 .logInContainerLeft input{

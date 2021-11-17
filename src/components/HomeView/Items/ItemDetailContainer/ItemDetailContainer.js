@@ -38,14 +38,11 @@ export const ItemDetailContainer = () => {
 
     return (
         <div>
-            <Clock />
-
             {
                 loading
                     ? <Loader />
                     : <ItemDetail {...item}/>
             }
-
         </div>
     )
 }

@@ -48,8 +48,7 @@ export const CartWidget = () => {
                         ></box-icon>
                     </Link>
 
-                    <span 
-                        className="itemQuantity"
+                    <span className="itemQuantity"
                         style={{display: cartItemQuantity() === 0 ? "none" : "block"}}
                     >
                         {cartItemQuantity()}
@@ -61,7 +60,7 @@ export const CartWidget = () => {
                         name='user-circle'
                         size='md'
                         animation='tada-hover'
-                        style={{cursor: "pointer", marginRight: "50px",}}
+                        style={{cursor: "pointer", marginRight: "50px"}}
                     ></box-icon>
             }
         </div>
