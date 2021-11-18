@@ -17,7 +17,7 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
 
     const {addToCart, isInCart} = useContext(CartContext)
 
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
 
     const handleAdd = () => {
         const newItem = {
