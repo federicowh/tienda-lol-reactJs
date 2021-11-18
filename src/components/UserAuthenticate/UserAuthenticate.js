@@ -89,7 +89,8 @@ export const UserAuthenticate = () => {
                             <input 
                                 type="text"
                                 name="user"
-                                placeholder="Usuario" 
+                                placeholder="Usuario"
+                                autoComplete="username" 
                                 value={values.user}
                                 onChange={handleInputChange}
                             /> {values.user.length === 0 && <small>¡Este campo es obligatorio!</small>}
@@ -100,6 +101,7 @@ export const UserAuthenticate = () => {
                                 type="password"
                                 name="password"
                                 placeholder="Contraseña" 
+                                autoComplete="current-password"
                                 value={values.password}
                                 onChange={handleInputChange}
                             /> {values.password.length === 0 && <small>¡Este campo es obligatorio!</small>}

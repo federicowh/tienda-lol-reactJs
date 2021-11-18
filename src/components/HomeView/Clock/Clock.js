@@ -5,13 +5,16 @@ export const Clock = () => {
 
     const [time, setTime] = useState( new Date() )
 
-    useEffect( () => {
+    function refreshClock() {
+        setTime(new Date())
+    }
 
-        setTimeout( () => {
-            setTime( new Date() )
-        }, 1000);
-
-    }, [time] )
+    useEffect(() => {
+        const timerId = setInterval(refreshClock, 1000)
+        return function cleanup() {
+            clearInterval(timerId)
+        }
+    }, [])
 
     return(
         <div className="clock">
