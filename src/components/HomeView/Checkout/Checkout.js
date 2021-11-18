@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Redirect } from 'react-router'
 import { CheckoutItem } from './CheckoutItem/CheckoutItem'
+import { Clock } from '../Clock/Clock'
 import { useHistory } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
 import { UIContext } from '../../../context/UIContext'
@@ -100,11 +101,13 @@ export const Checkout = () => {
                     : <>
                         {cart.length === 0 && <Redirect to="/tienda-lol-reactJs"/>}
 
+                        <Clock />
+
                         <div className="checkoutContainer">
                             <CheckoutItem />
 
                             <form onSubmit={handleSubmit}>
-                                <h3>Completa tus datos</h3>
+                                <h3>Completá tus datos</h3>
 
                                 <div className="checkoutInputContainer">
                                     <input 

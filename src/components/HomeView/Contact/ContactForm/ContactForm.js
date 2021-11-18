@@ -104,7 +104,7 @@ export const ContactForm = () => {
     return (
         <div className="contactForm">
             <form onSubmit={handleSubmit}>
-                <h3 className="contactFormTitle">Dejanos un mensaje</h3>
+                <h3 className="contactFormTitle">¡Dejanos un mensaje!</h3>
 
                 <div className="contactInputContainer">
                     <input 
