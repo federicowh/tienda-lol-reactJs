@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { getFirestore } from '../../../../firebase/FirebaseConfig'
+import Swal from 'sweetalert2'
 import firebase from 'firebase'
 import 'firebase/firestore'
-import Swal from 'sweetalert2'
 
 export const ContactForm = () => {
 
@@ -77,16 +77,13 @@ export const ContactForm = () => {
             return
         }
 
-        let nameFirestore=document.getElementById('name').value
-        let emailFirestore=document.getElementById('email').value
-        let messageFirestore=document.getElementById('message').value
 
         const db = getFirestore()
         db.collection('comments').doc().set({
-            Nombre: nameFirestore,
-            Email: emailFirestore,
-            Mensaje: messageFirestore,
-            date: firebase.firestore.Timestamp.fromDate(new Date())
+            Nombre: values.name,
+            Email: values.email,
+            Mensaje: values.message,
+            Fecha: firebase.firestore.Timestamp.fromDate(new Date())
         }).then(() => {
             Swal.fire({
                 icon: 'success',
@@ -105,7 +102,6 @@ export const ContactForm = () => {
                     <input 
                         type="text" 
                         name="name" 
-                        id="name"
                         className="input" 
                         placeholder="Nombre" 
                         value={values.name}
@@ -118,7 +114,6 @@ export const ContactForm = () => {
                     <input 
                         type="email" 
                         name="email"
-                        id="email" 
                         className="input" 
                         placeholder="Email"
                         value={values.email}
@@ -130,7 +125,6 @@ export const ContactForm = () => {
                 <div className="input-container textarea">
                     <textarea 
                         name="message"
-                        id="message"
                         className="input" 
                         placeholder="Tu mensaje..."
                         value={values.message}
