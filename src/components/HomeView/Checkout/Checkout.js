@@ -106,8 +106,7 @@ export const Checkout = () => {
                                 <div className="checkoutInputContainer">
                                     <input 
                                         type="text" 
-                                        name="name" 
-                                        className="input" 
+                                        name="name"  
                                         placeholder="Nombre" 
                                         value={values.name}
                                         onChange={handleInputChange}
@@ -119,7 +118,6 @@ export const Checkout = () => {
                                     <input 
                                         type="text" 
                                         name="surname" 
-                                        className="input" 
                                         placeholder="Apellido" 
                                         value={values.surname}
                                         onChange={handleInputChange}
@@ -130,7 +128,6 @@ export const Checkout = () => {
                                 <div className="checkoutInputContainer">
                                     <input type="email" 
                                         name="email" 
-                                        className="input" 
                                         placeholder="Email"
                                         value={values.email}
                                         onChange={handleInputChange} 
@@ -141,8 +138,7 @@ export const Checkout = () => {
                                 <div className="checkoutInputContainer">
                                     <input 
                                         type="tel" 
-                                        name="tel" 
-                                        className="input" 
+                                        name="tel"
                                         placeholder="Teléfono"
                                         value={values.tel}
                                         onChange={handleInputChange} 

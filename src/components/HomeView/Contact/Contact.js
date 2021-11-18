@@ -21,8 +21,8 @@ export const Contact = () => {
                 loading
                 ?   <Loader />
 
-                :   <div className="container">
-                        <div className="form">
+                :   <div className="contactContainer">
+                        <div className="contactContainerForm">
                             <ContactInfo />
 
                             <ContactForm />

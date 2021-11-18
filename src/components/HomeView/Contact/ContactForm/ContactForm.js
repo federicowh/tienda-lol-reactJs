@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { UIContext } from '../../../../context/UIContext'
+import { Loader } from '../../../../utilities/Loader/Loader'
 import { getFirestore } from '../../../../firebase/FirebaseConfig'
 import Swal from 'sweetalert2'
 import firebase from 'firebase'
 import 'firebase/firestore'
 
 export const ContactForm = () => {
+
+    const { loading, setLoading } = useContext(UIContext)
 
     const [values, setValues] = useState({
         name: '',
@@ -79,6 +83,8 @@ export const ContactForm = () => {
 
 
         const db = getFirestore()
+
+        setLoading(true)
         db.collection('comments').doc().set({
             Nombre: values.name,
             Email: values.email,
@@ -90,49 +96,48 @@ export const ContactForm = () => {
                 title: '¡Su mensaje ha sido enviado con éxito!',
                 text: 'Pronto estaremos respondiendo al email enviado.',
             })
+        }).finally(() => {
+            setLoading(false)
         })
     }
 
     return (
-        <div className="contact-form">
+        <div className="contactForm">
             <form onSubmit={handleSubmit}>
-                <h3 className="title">Dejanos un mensaje</h3>
+                <h3 className="contactFormTitle">Dejanos un mensaje</h3>
 
-                <div className="input-container">
+                <div className="contactInputContainer">
                     <input 
                         type="text" 
-                        name="name" 
-                        className="input" 
-                        placeholder="Nombre" 
+                        name="name"
+                        placeholder="Nombre..." 
                         value={values.name}
                         onChange={handleInputChange}
                     />
                     {values.name.length === 0 && <small>¡Este campo es obligatorio!</small>}
                 </div>
 
-                <div className="input-container">
+                <div className="contactInputContainer">
                     <input 
                         type="email" 
                         name="email"
-                        className="input" 
-                        placeholder="Email"
+                        placeholder="Email..."
                         value={values.email}
                         onChange={handleInputChange} 
                     />
                     {values.email.length === 0 && <small>¡Este campo es obligatorio!</small>}
                 </div>
 
-                <div className="input-container textarea">
+                <div className="contactInputContainer">
                     <textarea 
                         name="message"
-                        className="input" 
                         placeholder="Tu mensaje..."
                         value={values.message}
                         onChange={handleInputChange}
                     ></textarea>
                 </div>
 
-                <button type="submit" className="btn">Enviar</button>
+                <button type="submit" className="contactFormBtn">Enviar</button>
             </form>
         </div>
     )

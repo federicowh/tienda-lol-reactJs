@@ -8,12 +8,12 @@ export const ContactInfo = () => {
     const connectWithUs = 'Conecta con nosotros:'
 
     return (
-        <div className="contact-info">
-            <h3 className="title">Contacta con Nosotros.</h3>
+        <div className="contactInfo">
+            <h3 className="contactInfoTitle">Contacta con Nosotros.</h3>
 
-            <p className="text">{contactInfo}</p>
+            <p className="contactInfoText">{contactInfo}</p>
 
-            <div className="info">
+            <div className="infoContainer">
                 <div className="information">
                     <box-icon name='map' type='solid' color="white" animation='tada-hover'></box-icon>
                     <p>{contactAddress}</p>
@@ -30,10 +30,10 @@ export const ContactInfo = () => {
                 </div>
             </div>
 
-            <div className="social-media">
+            <div className="contactSocialMedia">
                 <p>{connectWithUs}</p>
 
-                <div className="social-icons">
+                <div className="contactSocialIcons">
                     <i><box-icon type='logo' name='facebook-circle' color="white" animation='tada-hover'></box-icon></i>
                     <i><box-icon type='logo' name='twitter' color="white" animation='tada-hover'></box-icon></i>
                     <i><box-icon type='logo' name='instagram' color="white" animation='tada-hover'></box-icon></i>

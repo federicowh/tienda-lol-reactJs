@@ -1,4 +1,4 @@
-.container {
+.contactContainer {
     position: relative;
     width: 90%;
     margin: auto;
@@ -10,7 +10,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.form {
+.contactContainerForm {
     width: 100%;
     background-color: black;
     z-index: 1000;
@@ -19,12 +19,12 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-form {
+.contactForm {
     background-color: #EBA272;
     position: relative;
 }
 
-.contact-form:before {
+.contactForm:before {
     content: "";
     position: absolute;
     width: 26px;
@@ -35,56 +35,69 @@
     left: -13px;
 }
 
-form {
+.contactForm form {
     padding: 2.3rem 2.2rem;
     z-index: 10;
     overflow: hidden;
     position: relative;
 }
 
-.title {
+.contactFormTitle {
     color: black;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
     margin-bottom: 0.7rem;
 }
 
-.input-container {
+.contactInputContainer {
+    display: flex;
+    flex-flow: column wrap;
     position: relative;
-    margin: 1rem 0;
+    margin: 18px 0px 18px 0px;
+    background-color: antiquewhite;
 }
 
-.input-container small {
+.contactInputContainer small {
+    width: 100%;
     color: red;
+    background-color: #EBA272;
     font-size: 14px;
     font-style: italic;
 }
 
-.input {
+.contactInputContainer input {
     width: 100%;
     outline: none;
     border: 1px solid black;
     background: none;
-    padding: 0.6rem 1.2rem;
+    padding: 10px;
     color: black;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
-.input::placeholder{
+.contactInputContainer input::placeholder{
     color: black;
+    background-color: antiquewhite;
 }
 
-textarea.input {
+.contactInputContainer textarea {
+    outline: none;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
     padding: 0.8rem 1.2rem;
+    width: 100%;
     min-height: 150px;
     resize: none;
     overflow-y: auto;
 }
 
-.btn {
+.contactFormBtn {
     border: none;
     background-color: black;
     color: white;
@@ -100,22 +113,22 @@ textarea.input {
     transition: all 0.5s;
 }
 
-.btn:hover {
+.contactFormBtn:hover {
     background-color: black;
     color: #EBA272;
     box-shadow: inset 0 0 0 10px wheat;
 }
 
-.contact-info {
+.contactInfo {
     padding: 2.3rem 2.2rem;
     text-align: justify;
 }
 
-.contact-info .title {
+.contactInfoTitle {
     color: #EBA272;
 }
 
-.text {
+.contactInfoText {
     color: white;
     margin: 1.5rem 0 2rem 0;
 }
@@ -133,20 +146,20 @@ textarea.input {
     padding-left: 10px;
 }
 
-.social-media {
+.contactSocialMedia {
     padding: 2rem 0 0 0;
 }
 
-.social-media p {
+.contactSocialMedia p {
     color: white;
 }
 
-.social-icons {
+.contactSocialIcons {
     display: flex;
     margin-top: 0.5rem;
 }
 
-.social-icons i {
+.contactSocialIcons i {
     width: 45px;
     height: 45px;
     border-radius: 5px;
@@ -154,74 +167,4 @@ textarea.input {
     line-height: 55px;
     margin-right: 0.5rem;
     transition: 0.3s;
-}
-
-@media (max-width: 850px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info:before {
-        bottom: initial;
-        top: -75px;
-        right: 65px;
-        transform: scale(0.95);
-    }
-
-    .contact-form:before {
-        top: -13px;
-        left: initial;
-        right: 70px;
-    }
-
-    .text {
-        margin: 1rem 0 1.5rem 0;
-    }
-
-    .social-media {
-        padding: 1.5rem 0 0 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 1.5rem;
-    }
-
-    .contact-info:before {
-        display: none;
-    }
-
-    form,
-    .contact-info {
-        padding: 1.7rem 1.6rem;
-    }
-
-    .text,
-    .information,
-    .social-media p {
-        font-size: 0.8rem;
-    }
-
-    .title {
-        font-size: 1.15rem;
-    }
-
-    .social-icons a {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .icon {
-        width: 23px;
-    }
-
-    .input {
-        padding: 0.45rem 1.2rem;
-    }
-
-    .btn {
-        padding: 0.45rem 1.2rem;
-    }
 }
