@@ -130,9 +130,14 @@
     opacity: 0.5;
 }
 
+.itemBtnActive span{
+    color: gray;
+    opacity: 0.5;
+}
+
 /* ItemCount desactivar/activar */
 .itemBtnActived{
-    opacity: 0.5;
+    opacity: 0.1;
     color: gray;
     pointer-events: none;
 }

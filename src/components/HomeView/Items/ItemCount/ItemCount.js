@@ -22,21 +22,21 @@ export const ItemCount = ( {quantity, modifyQuantity, max} ) => {
 
     return (
         <div className="itemCountContainer">
-            <button 
+            <span 
             onClick={handleRestar}
             className={styles.btnMin}
             >
-                -
-            </button>
+                <box-icon name='minus' animation="tada-hover"></box-icon>
+            </span>
 
             <span>{quantity}</span>
 
-            <button 
+            <span 
             onClick={handleSumar}
             className={styles.btnMax}
             >
-                +
-            </button>
+                <box-icon name='plus' animation="tada-hover"></box-icon>
+            </span>
         </div>
     )
 }

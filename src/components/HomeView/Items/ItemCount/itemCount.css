@@ -1,8 +1,11 @@
 .itemCountContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     color: black;
 }
 
-.itemCountContainer button{
+.itemCountContainer span{
     margin: 10px;
     padding: 3px 10px 3px 10px;
 
