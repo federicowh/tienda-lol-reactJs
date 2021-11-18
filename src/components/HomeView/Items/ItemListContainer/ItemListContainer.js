@@ -32,7 +32,7 @@ export const ItemListContainer = () => {
         })
         .catch( err => console.log(err) )
         .finally( () => {
-            setTimeout(() => setLoading(false), 2000)
+            setTimeout(() => setLoading(false), 1000)
         })
 
     }, [categoryId, setLoading])
