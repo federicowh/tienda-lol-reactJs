@@ -13,7 +13,7 @@ export const CheckoutItem = () => {
                     <div key={prod.id} className="checkoutItem">
                         <p>x {prod.quantity} </p>
                         <img src={prod.img} alt={prod.name} />
-                        <h3>{prod.name}</h3>
+                        <h4>{prod.name}</h4>
                     </div>
                 ))
             }
