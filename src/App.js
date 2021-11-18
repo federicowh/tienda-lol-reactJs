@@ -34,6 +34,10 @@ function App() {
               { isAuthenticated
               ?
               <>
+              <Route exact path="/">
+                <HomeView />
+              </Route>
+
               <Route exact path="/tienda-lol-reactJs">
                 <HomeView />
               </Route>
@@ -56,10 +60,6 @@ function App() {
 
               <Route exact path="/checkout">
                 <Checkout />
-              </Route>
-
-              <Route exact path="/">
-                <HomeView />
               </Route>
               </>
 
