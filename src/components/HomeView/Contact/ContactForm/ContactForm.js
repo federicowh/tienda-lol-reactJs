@@ -81,7 +81,6 @@ export const ContactForm = () => {
             return
         }
 
-
         const db = getFirestore()
 
         setLoading(true)
@@ -94,7 +93,7 @@ export const ContactForm = () => {
             Swal.fire({
                 icon: 'success',
                 title: '¡Su mensaje ha sido enviado con éxito!',
-                text: 'Pronto estaremos respondiendo al email enviado.',
+                text: `Pronto estaremos respondiendo al email: ${values.email}.`,
             })
         }).finally(() => {
             setLoading(false)
