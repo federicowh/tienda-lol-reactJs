@@ -6,6 +6,7 @@ export const FirebaseOrder = ({ data, cart, total }) => {
 
     return new Promise(async (resolve, reject) => {
 
+        // Generando el objeto order
         const order = {
             buyer: data,
             items: cart.map((prus) => ({id: prus.id, price: prus.price, name: prus.name, quantity: prus.quantity})),
@@ -13,6 +14,7 @@ export const FirebaseOrder = ({ data, cart, total }) => {
             date: firebase.firestore.Timestamp.fromDate(new Date())
         }
 
+        // Batch de actualización
         const db = getFirestore()
         const orders = db.collection('orders')
         const itemsToUpdate = db.collection('products')
