@@ -18,27 +18,40 @@
 }
 
 .checkoutContainer form{
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .checkoutInputContainer{
-    margin: 20px;
-    width: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    margin: 15px 0px 15px 0px;
+    background-color: antiquewhite;
+    width: 40%;
 }
 
 .checkoutInputContainer small{
     color: red;
-    font-size: 12px;
+    background-color: white;
+    font-size: 14px;
     font-style: italic;
 }
 
 .checkoutInputContainer input{
-    background-color: #EBA272;
-    color: black;
+    width: 100%;
+    outline: none;
     border: 1px solid black;
+    background: none;
+    padding: 10px;
+    color: black;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 }
 
 .checkoutInputContainer input::placeholder{
