@@ -31,7 +31,7 @@ export const ItemDetailContainer = () => {
             })
             .catch( err => console.log(err) )
             .finally( () => {
-                setLoading(false)
+                setTimeout(() => setLoading(false), 1000)
             })
 
     }, [itemId, setLoading])

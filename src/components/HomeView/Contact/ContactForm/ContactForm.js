@@ -96,7 +96,7 @@ export const ContactForm = () => {
                 text: `Pronto estaremos respondiendo al email: ${values.email}.`,
             })
         }).finally(() => {
-            setLoading(false)
+            setTimeout(() => setLoading(false), 1000)
         })
     }
 
