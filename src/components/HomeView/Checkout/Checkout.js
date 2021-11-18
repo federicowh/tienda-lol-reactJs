@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Redirect } from 'react-router'
+import { CheckoutItem } from './CheckoutItem/CheckoutItem'
 import { useHistory } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
 import { UIContext } from '../../../context/UIContext'
@@ -11,7 +12,7 @@ import './checkout.css'
 export const Checkout = () => {
 
     const { loading, setLoading } = useContext(UIContext)
-    const { cart, cartFinalPrice, deleteAll } = useContext(CartContext)
+    const { cart, cartFinalPrice, emptyCart } = useContext(CartContext)
     const { push } = useHistory()
 
     const [values, setValues] = useState({
@@ -75,7 +76,7 @@ export const Checkout = () => {
                     title: '¡Su compra fue registrada con éxito!',
                     text: `Anote su número de orden: ${res}`,
                     willClose: () => {
-                        deleteAll()
+                        emptyCart()
                     }
                 })
             })
@@ -100,6 +101,8 @@ export const Checkout = () => {
                         {cart.length === 0 && <Redirect to="/tienda-lol-reactJs"/>}
 
                         <div className="checkoutContainer">
+                            <CheckoutItem />
+
                             <form onSubmit={handleSubmit}>
                                 <h3>Completa tus datos</h3>
 

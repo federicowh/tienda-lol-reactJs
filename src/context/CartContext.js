@@ -17,7 +17,7 @@ export const CartProvider = ( {children} ) => {
         setCart( newCart )
     }
 
-    const deleteAll = () => {
+    const emptyCart = () => {
         setCart([])
     }
 
@@ -44,7 +44,7 @@ export const CartProvider = ( {children} ) => {
             cart, 
             addToCart, 
             removeItem, 
-            deleteAll, 
+            emptyCart, 
             cartItemQuantity,
             cartFinalPrice,
             isInCart

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './itemList.css'
 
 export const ItemList = ({ items = [] }) => {
+
     return (
         <div className="productsContainer">
             <h2 className="productsTitle">Nuestros Productos</h2>
