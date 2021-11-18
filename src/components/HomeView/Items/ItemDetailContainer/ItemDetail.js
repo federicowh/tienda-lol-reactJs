@@ -72,7 +72,7 @@ export const ItemDetail = ({ id, name, price, img, img1, img2, img3, description
 
                     <div className="itemBtn"> 
                         <button onClick={ () => removeItem(id) }>Cancelar</button>
-                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><button>¡Comprar!</button></Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/cart"><button>¡Comprar ahora!</button></Link>
                     </div>
                 } 
 

@@ -87,7 +87,8 @@
 
 .itemBtn button{
     background-color: white;
-    border: none;
+    width: 200px;
+    border: 1px solid black;
     cursor: pointer;
     padding: 15px;
     transition: all 0.7s;
@@ -99,6 +100,10 @@
     color: #EBA272;
     background-color: black;
     box-shadow: inset 0 0 0 5px #EBA272;
+}
+
+.itemCountContainer button{
+    border: none;
 }
 
 /* ItemDetail desactivar/activar */
