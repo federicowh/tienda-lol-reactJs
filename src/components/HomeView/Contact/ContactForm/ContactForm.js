@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import { getFirestore } from '../../../../firebase/FirebaseConfig'
-import firebase from 'firebase'
-import 'firebase/firestore'
 import Swal from 'sweetalert2'
 
 export const ContactForm = () => {
@@ -76,24 +73,6 @@ export const ContactForm = () => {
 
             return
         }
-
-        let nameFirestore=document.getElementById('name').value
-        let emailFirestore=document.getElementById('email').value
-        let messageFirestore=document.getElementById('message').value
-
-        const db = getFirestore()
-        db.collection('comments').doc().set({
-            Nombre: nameFirestore,
-            Email: emailFirestore,
-            Mensaje: messageFirestore,
-            date: firebase.firestore.Timestamp.fromDate(new Date())
-        }).then(() => {
-            Swal.fire({
-                icon: 'success',
-                title: '¡Su mensaje ha sido enviado con éxito!',
-                text: 'Pronto estaremos respondiendo al email enviado.',
-            })
-        })
     }
 
     return (
@@ -138,7 +117,7 @@ export const ContactForm = () => {
                     ></textarea>
                 </div>
 
-                <input type="submit" value="Enviar" className="btn"/>
+                <button type="submit" className="btn">Enviar</button>
             </form>
         </div>
     )
